@@ -124,16 +124,30 @@ En esta ocasión, se usará GitHub.
 
 ### 1- ¿Qué componentes de tu proyecto se subirán a GitHub?
 
+Todos los componentes, desde las vistas en html de la portada, la elección de las recetas, el historial, todas las recetas de forma individual y el índice de recetas, cada uno con su hoja de estilos y aplicación en JS. Además. las imágenes de referencia para cada una de ellas.
+
 ### 2- ¿Cómo vas a compartir el repositorio con tus compañeros?
+
+Se ha creado una organización en la que todos podemos crear PR para que luego podamos añadir en forma conjunta todos los cambios.
 
 ### 3- ¿Cuál es tu flujo de trabajo de Git?
 
+Al ser un equipo de dos, ambos podremos hacer los PR's cada vez que terminemos una issue, pero sólo al final se hará el merge cuando estemos los dos conectados vía zoom para que no existan conflictos.
+
 ### 4- ¿Utilizarás un flujo de trabajo de revisiones PR? Si es así, considera
 
-### 5- ¿Cuántas personas deberán revisar un PR?
+#### - ¿Cuántas personas deberán revisar un PR?
 
-### 6- ¿Quíen hacer el merge a los PR?
+Los dos miembros del equipo.
 
-### 7- ¿Cada cuánto tiempo harán merge?
+#### - ¿Quíen hacer el merge a los PR?
 
-### 8- ¿Cómo se comunicarán cuando sea momento de hacer un merge?
+Técnicamente Angel debe hacerlo, ya que él creó la organización, pero el proceso deberá ser corroborado por ambos.
+
+#### - ¿Cada cuánto tiempo harán merge?
+
+Cada vez que una issue haya sido completada y corroborada.
+
+#### - ¿Cómo se comunicarán cuando sea momento de hacer un merge?
+
+Sólo y únicamente cuando ambos podamos estar compartiendi pantalla por zoom o alguna aplicación similar.
