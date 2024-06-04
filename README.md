@@ -8,3 +8,5 @@ Integrantes:
 
 Anthony Hernadez
 Angel Paz
+
+## Acuerdo de Equipo: [Leer](./TeamAgreement.md)
