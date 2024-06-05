@@ -13,96 +13,76 @@ Angel Paz
 
 ## Historia de Usuario
 
-### 1. Como inversionista de Dev's-food-er, quiero que haya un filtro para clasificar las recetas por comidas dieteticas o veganas para tener una busqueda más especifica
+### 1. Como Usuario de Dev's-food-er, quiero que la aplicación tenga una sección donde yo pueda elegir los ingredientes que poseo
 
 **Tareas de Funcionalidad:**
 
-* Desarrollar un filtro de búsqueda que permita clasificar las recetas por comidas dietéticas o veganas en el codigo.
-* Implementar la funcionalidad para seleccionar la opción de comida dietética o vegana.
-* Integrar el filtro de búsqueda en la interfaz de usuario de la aplicación.
-* Asegurarse de que las recetas se clasifiquen correctamente según la selección del filtro.
-* Garantizar que el filtro sea fácil de usar y comprendido por los usuarios.
+* Desarrollar una cuadricula con una gran variedad de ingredientes donde los usuarios puedan seleccionar los suyos.
+* Implementar la funcionalidad para seleccionar cada ingrediente.
+* Integrar la capacidad de seleccionar más de un ingrediente.
+* Asegurarse de que cada ingrediente se guarde
 
 **Pruebas de Aceptación:**
 
-* Verificar que al seleccionar la opción de comida dietética, se muestren solo las recetas etiquetadas como dietéticas.
-* Confirmar que al seleccionar la opción vegana, se muestren solo las recetas etiquetadas como veganas.
-* Probar que el filtro funcione correctamente en todos los navegadores y dispositivos.
-* Verificar que el filtro se actualice dinámicamente cuando se selecciona una opción.
-* Asegurar que el filtro funcione correctamente incluso con grandes cantidades de recetas.
+* Verificar que se haya seleccionado cada ingrediente diferenciandolo con los otros ingredientes no seleccionados.
+* Confirmar que los ingredientes resaltados se guarden.
+* Probar que los ingredientes seleccionados sean los suficientes para darte una receta.
 
-### 2. Como encargado de marketing deseo que la app tenga una sección de compartir mi plato del día a las redes sociales, o directamente a mis amigos y una para comentar sobre el plato con más personas dentro de la app
+### 2. Como Usuario de Dev's-food-er, quiero que luego de seleccionar los ingredientes, esta me de como opciones las recetas que puedo hacer en base a ellos
 
 **Tareas de Funcionalidad:**
 
-* Desarrollar una función de compartir que permita a los usuarios publicar su plato del día en redes sociales como Facebook, Twitter, o Instagram.
-* Implementar la opción de compartir directamente con amigos dentro de la aplicación, mediante mensajes o correos electrónicos.
-* Crear una sección de comentarios para cada plato, donde los usuarios puedan discutir y compartir sus opiniones sobre el plato del día.
-* Integrar botones de compartir y comentar de manera intuitiva en la interfaz de usuario de la aplicación.
-* Asegurarse de que la función de compartir funcione correctamente en diferentes dispositivos y sistemas operativos.
-* Establecer medidas de seguridad y privacidad para proteger la información compartida por los usuarios.
+* Desarrollar diferentes opciones de recetas para los ingredientes que se eligieron.
+* Mostrar una reseña de cada receta para saber lo minimo del plato que se presenta.
+* Mostrar una imagen para previsualisar las recetas
+* Poder deslizar la receta para ver más opciones
 
 **Pruebas de Aceptación:**
 
-* Verificar que al compartir un plato del día en redes sociales, se publique correctamente con la información relevante.
-* Confirmar que la opción de compartir directamente con amigos funcione adecuadamente y los mensajes sean entregados sin problemas.
-* Probar la función de comentarios para asegurar que los usuarios puedan publicar y ver comentarios sobre los platos del día.
-* Verificar que los botones de compartir y comentar sean fáciles de encontrar y utilizar en la aplicación.
-* Asegurar que la función de compartir cumpla con las políticas y requisitos de privacidad de las redes sociales utilizadas.
-* Realizar pruebas de seguridad para garantizar que la información compartida esté protegida contra accesos no autorizados.
+* Verificar que la receta tenga los ingredientes seleccionados.
+* Confirmar que la receta sea la misma que indica la imagen y la reseña.
+* Probar si se puede deslizar la receta para ver las opciones
 
-### 3. Como administrador de la app me gustaría tener la opción de elegir la comida que voy comer en los siguientes días y fijarlos en un calendario
+### 3. Como Usuario de Dev's-food-er, quiero que luego de elegir la receta esta me de los pasos e instrucciones para hacer la receta
 
 **Tareas de Funcionalidad:**
 
-* Diseñar una interfaz de usuario para que los administradores puedan seleccionar y programar las comidas en un calendario.
-* Desarrollar la funcionalidad que permita a los administradores elegir las comidas de un menú predefinido o crear nuevas.
-* Implementar la capacidad de asignar comidas a días específicos en el calendario, con opciones para el desayuno, almuerzo y cena.
-* Introducir la opción de guardar y editar las selecciones de comida en el calendario para futuras modificaciones.
-* Asegurarse de que el calendario sea fácil de navegar y que muestre claramente las comidas programadas para cada día.
-* Integrar notificaciones o recordatorios para los administradores sobre las comidas programadas en el calendario.
+* Desarrollar la opcion de seleccionar la receta preferida con solo seleccionarla.
+* Enviar al usuario a una sección donde tenga la información de la receta
+* Mostrar la imagen de referencia de la receta
+* Mostrar los ingredientes y los pasos para hacer la receta
 
 **Pruebas de Aceptación:**
 
-* Verificar que los administradores puedan seleccionar y programar comidas en el calendario de manera intuitiva.
-* Confirmar que las opciones de elegir comidas del menú y crear nuevas funcionen correctamente.
-* Probar la asignación de comidas a días específicos y asegurarse de que se guarden correctamente en el calendario.
-* Verificar que los administradores puedan editar y actualizar las selecciones de comida en el calendario según sea necesario.
-* Asegurarse de que el calendario muestre claramente las comidas programadas para cada día, con detalles adicionales si es necesario.
-* Probar las notificaciones o recordatorios para garantizar que se envíen correctamente y en el momento adecuado.
+* Verificar que sea seleccionable la receta.
+* Confirmar que dirija a la pagina de recetas.
+* Verificar que los ingredientes, los pasos y la imagen sea la deseada con la receta.
 
-### 4. Como usuarios recurrente me gustaría que la app tenga conexión directa con refrigeradores inteligentes para tener un inventario automatico de los ingredientes que tengo
+### 4. Como Usuario de Dev's-food-er, me gustaría saber cuales son las recetas que he seleccionado anteriormente
 
 **Tareas de Funcionalidad:**
 
-* Investigar y establecer conexión con refrigeradores inteligentes compatibles con la aplicación.
-* Desarrollar la funcionalidad para acceder a la lista de ingredientes almacenados en el refrigerador inteligente desde la aplicación.
-* Implementar la capacidad de sincronizar automáticamente el inventario de ingredientes del refrigerador con la lista de compras o con las recetas disponibles en la aplicación.
-* Introducir opciones para que los usuarios puedan ver el inventario de ingredientes, recibir notificaciones de ingredientes próximos a vencerse y sugerencias de recetas basadas en los ingredientes disponibles.
-* Asegurarse de que la conexión con el refrigerador inteligente sea segura y cumpla con las normativas de privacidad de datos.
+* Crear un Historial de las recetas.
+* Guardar las recetas seleccionadas con la fecha.
+* Mostrar en una pagina adicional un preview de todas las recetas seleccionadas anteriormente.
+* Poder seleccionar la receta nuevamente para que muestre los pasos para hacer la receta
 
 **Pruebas de Aceptación:**
 
-* Verificar que la aplicación pueda establecer conexión con el refrigerador inteligente y acceder a la lista de ingredientes almacenados.
-* Confirmar que la sincronización automática del inventario de ingredientes funcione correctamente y se actualice en tiempo real.
-* Probar la funcionalidad de visualización del inventario de ingredientes y la recepción de notificaciones sobre ingredientes próximos a vencerse.
-* Verificar que las sugerencias de recetas basadas en los ingredientes disponibles sean precisas y relevantes.
-* Asegurarse de que la conexión con el refrigerador inteligente sea estable y segura, protegiendo la privacidad de los datos del usuario.
+* Verificar que se haya creado un historial 
+* Confirmar que se haya guardado las recetas seleccionadas
+* Verificar que sea la receta correcta por la fecha seleccionada.
 
-### 5. Como accionista quisiera tener una sección en la pagina donde selecciono mi receta, y me diga que otras recetas podría hacer si llegase a tener solo un ingrediente más
+### 5. Como Usuario, quisiera que la aplicación me muestre todas las recetas que tiene sin que yo seleccione los ingredientes
 
 **Tareas de Funcionalidad:**
 
-* Diseñar una interfaz de usuario intuitiva para la sección de selección de recetas y sugerencias de recetas adicionales.
-* Desarrollar la funcionalidad que permita a los accionistas seleccionar una receta de la lista disponible.
-* Implementar un algoritmo que analice la receta seleccionada y sugiera otras recetas que se puedan hacer agregando un ingrediente adicional.
-* Integrar la capacidad de mostrar las sugerencias de recetas adicionales de manera clara y organizada en la interfaz de usuario.
-* Asegurarse de que las sugerencias de recetas adicionales sean relevantes y estén basadas en las preferencias del accionista y los ingredientes disponibles en la receta seleccionada.
+* Diseñar una interfaz de usuario donde pueda acceder a todas las recetas en lista.
+* Enlistar todas las recetas con su reseña e imagen de referencia.
+* Poder seleccionar una receta para llevarte a la pagina donde puedas ver las instrucciones.
 
 **Pruebas de Aceptación:**
 
-* Verificar que los accionistas puedan seleccionar una receta de la lista disponible de manera fácil y rápida.
-* Confirmar que el algoritmo de sugerencias de recetas adicionales funcione correctamente y proporcione opciones relevantes.
-* Probar la funcionalidad de visualización de las sugerencias de recetas adicionales en la interfaz de usuario.
-* Verificar que las sugerencias de recetas adicionales estén basadas en las preferencias del accionista y los ingredientes disponibles en la receta seleccionada.
-* Asegurarse de que la experiencia del usuario en la sección de selección de recetas y sugerencias de recetas adicionales sea satisfactoria y fácil de usar.
+* Verificar que se vean todas las opciones que tenemos.
+* Confirmar que se pueda seleccionar las recetas.
+* Verificar que cada una tenga su imagen de referencia y resumen.
