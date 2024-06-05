@@ -11,6 +11,8 @@ Angel Paz
 
 ## Acuerdo de Equipo: [Leer](./TeamAgreement.md)
 
+## Requisitos del Software: [Leer](./requirements.md)
+
 ## Historia de Usuario
 
 ### 1. Como inversionista de Dev's-food-er, quiero que haya un filtro para clasificar las recetas por comidas dieteticas o veganas para tener una busqueda más especifica
