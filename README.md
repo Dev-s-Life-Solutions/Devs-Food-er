@@ -106,3 +106,7 @@ Angel Paz
 * Probar la funcionalidad de visualización de las sugerencias de recetas adicionales en la interfaz de usuario.
 * Verificar que las sugerencias de recetas adicionales estén basadas en las preferencias del accionista y los ingredientes disponibles en la receta seleccionada.
 * Asegurarse de que la experiencia del usuario en la sección de selección de recetas y sugerencias de recetas adicionales sea satisfactoria y fácil de usar.
+
+## Modelo de Dominio
+
+![Modelado](./img/modelado.png)
