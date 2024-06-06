@@ -11,6 +11,8 @@ Angel Paz
 
 ## Acuerdo de Equipo: [Leer](./TeamAgreement.md)
 
+## Requisitos del Software: [Leer](./requirements.md)
+
 ## Historia de Usuario
 
 ### 1. Como Usuario de Dev's-food-er, quiero que la aplicación tenga una sección donde yo pueda elegir los ingredientes que poseo
@@ -82,7 +84,12 @@ Angel Paz
 * Poder seleccionar una receta para llevarte a la pagina donde puedas ver las instrucciones.
 
 **Pruebas de Aceptación:**
+* Verificar que los accionistas puedan seleccionar una receta de la lista disponible de manera fácil y rápida.
+* Confirmar que el algoritmo de sugerencias de recetas adicionales funcione correctamente y proporcione opciones relevantes.
+* Probar la funcionalidad de visualización de las sugerencias de recetas adicionales en la interfaz de usuario.
+* Verificar que las sugerencias de recetas adicionales estén basadas en las preferencias del accionista y los ingredientes disponibles en la receta seleccionada.
+* Asegurarse de que la experiencia del usuario en la sección de selección de recetas y sugerencias de recetas adicionales sea satisfactoria y fácil de usar.
 
-* Verificar que se vean todas las opciones que tenemos.
-* Confirmar que se pueda seleccionar las recetas.
-* Verificar que cada una tenga su imagen de referencia y resumen.
+## Modelo de Dominio
+
+![Modelado](./img/modelado.png)
