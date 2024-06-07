@@ -81,13 +81,31 @@ const recipe8 = new Recipe(
     'Bajo'
 )
 const recipe9 = new Recipe(
-
+    'Anticuchos de pescado',
+    'Cuatro Porciones',
+    'anticucho_pescado',
+    ['1½ kg de pescado', '2 cdas. de ají panca molido', '½ taza de vinagre', 'sal', 'pimienta', 'achiote', 'comino'],
+    ['1. Cortar el pescado en cuadrados de 3 cm y ponerlos a macerar 1 hora en la mezcla de vinagre, ajos, ají, achiote, sal, pimienta y comino.', '2. Insertar los pedazos de pescado en cañitas o alambres.', 'Cocinar en el brasero o a la plancha.', 'Servir con la salsa de ají.'],
+    'Facil',
+    'Bajo'
 )
 const recipe10 = new Recipe(
-
+    'Arroz con huevo cremoso',
+    'Cuatro Porciones',
+    'arroz_huevo_cremoso',
+    ['1 cucharadita de aceite.', '2 tallos de cebolla larga (cebolla china). ', '2 tazas de arroz (de preferencia de del día anterior)', '1/4 de quesito desmenuzado', '1 o 2 huevos completos.', '1/2 cucharadita de sal.', '2 cucharadas de leche.', 'cilantro o culantro al gusto'],
+    ['1. De esta forma te rinde más y se distribuye mejor su sabor y nutrientes. Bate los huevos con la sal hasta que queden amarillitos.', '2. Para cocinar correctamente primero pon a calentar la cacerola y luego adiciona el poquito de aceite.', '3. Agrega la cebollita junca (si la tienes) ralladita y sofríela un poco', '4. Agrega el arroz, el quesito y revuélvelo bien', '5. Una vez lo tengas caliente, agrega los huevos batidos, la sal, la leche y continúa mezclando hasta que el arroz quede todo amarillo', '6. El tiempo para cocinarlo dependerá de tu gusto, a mayor tiempo estará más seco, a menor tiempo más cremoso. Sírvelo con cilantro picado.'],
+    'Fácil',
+    'Bajo'
 )
 const recipe11 = new Recipe(
-
+    'Albóndigas de lentejas y culantro en salsa de tomate',
+    'Cuatro Porciones',
+    'albondigas_lentejas',
+    ['2 tazas de lentejas remojadas desde el día anterior', ' 2 dientes de ajo rallados', '2 ramas de cilantro picado', ' 1 huevo batido', ' 3 cucharadas de miga de pan', 'Media cucharadita de sal', 'Media cucharadita de Comino molido'],
+    ['1. Remoja las lentejas por una noche, luego de remojadas, escúrrelas y mézclalas con el ajo, el cilantro y la miga de pan.', '2. Después tritura toda la mezcla con ayuda de un cuchillo o mortero, o si prefieres licúalas.', '3. Arma bolitas y refrigéralas por una hora.', '4. Para la salsa, calienta una sartén y mezcla todos los ingredientes, cocínalos a fuego medio-bajo durante 20 minutos.', '5. En otra sartén pon un poco de aceite, sella las albóndigas por todos sus lados, agrega la salsa y déjalas cocinar por 10 minutos más.', '6. Sírvelas con quesito desmenuzado por encima.'],
+    'Fácil',
+    'Bajo'
 )
 const recipe12 = new Recipe(
 
