@@ -59,6 +59,11 @@ const recipe5 = new Recipe(
     'Media',
     'Media'
 )
+const recipes = [recipe1,recipe2,recipe3,recipe4,recipe5];
+
+
+
+
 // const recipe6 = new Recipe(
 //     'Alitas de pollo escabechadas',
 //     'Cuatro Porciones',
