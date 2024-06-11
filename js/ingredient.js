@@ -23,6 +23,8 @@ const ingredients = [
 ]
 
 function renderIngredients() {
+    const show_result_button = document.getElementById('show_result_btn');
+    show_result_button.hidden = true;
     const container = document.getElementById('ingredients_container');
     container.innerHTML = '';
     ingredients.forEach(ingredient => {
