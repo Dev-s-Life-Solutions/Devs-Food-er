@@ -5,7 +5,7 @@ function Ingredient(id, name, img) {
 }
 
 const ingredients = [
-    new Ingredient('atun', 'Atún', '..\img\atun.jpg'),
+    new Ingredient('atun', 'Atún', '/img/atun.jpg'),
     new Ingredient('cebolla', 'Cebolla', '..\img\cebolla.jpg'),
     new Ingredient('pan', 'Pan', '..\img\pan.jpg'),
     new Ingredient('leche', 'Leche', '..\img\leche.jpg'),
@@ -23,8 +23,6 @@ const ingredients = [
 ]
 
 function renderIngredients() {
-    const show_result_button = document.getElementById('show_result_btn');
-    show_result_button.hidden = true;
     const container = document.getElementById('ingredients_container');
     container.innerHTML = '';
     ingredients.forEach(ingredient => {
