@@ -9,6 +9,16 @@ function Recipe(name, servings, img, ingredients, ingredients_detailed, steps, d
     this.cost = cost;
 }
 
+function renderRecipe (recipe){
+    const card = document.createElement('div');
+    const h2 = document.createElement('h2');
+    h2.textContent = recipe.name;
+    card.appendChild(h2);
+    console.log(card);
+    return card;
+}
+
+
 const recipe1 = new Recipe(
     'Ají de atún',
     'Seis Porciones',
