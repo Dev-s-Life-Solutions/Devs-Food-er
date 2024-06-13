@@ -1,19 +1,31 @@
-function Recipe(name, servings, img, ingredients, ingredients_detailed, steps, difficulty, cost) {
+function Recipe(name, servings, img, ingredients, ingredientsDetailed, steps, difficulty, cost, preview) {
     this.name = name;
     this.servings = servings;
     this.img = img;
     this.ingredients = ingredients;
-    this.ingredients_detailed = ingredients_detailed;
+    this.ingredientsDetailed = ingredientsDetailed;
     this.steps = steps;
     this.difficulty = difficulty;
     this.cost = cost;
+    this.preview = preview;
 }
 
 function renderRecipe (recipe){
     const card = document.createElement('div');
     const h2 = document.createElement('h2');
+    const img = document.createElement("img");
+    const prev = document.createElement('p');
     h2.textContent = recipe.name;
+    img.src = recipe.img;
+    img.alt = recipe.name;
+    prev.textContent = recipe.preview;
     card.appendChild(h2);
+    card.appendChild(img);
+    card.appendChild(prev);
+    card.addEventListener('click', () => {
+        localStorage.setItem('selectedRecipe', JSON.stringify(recipe));
+        window.location.href = 'recipe.html';
+    });
     console.log(card);
     return card;
 }
@@ -27,17 +39,19 @@ const recipe1 = new Recipe(
     ['1 lata de atún', '1 cebolla picada', '2 panes (de preferencia franceces)', '3/4 de leche evaporada', '1/4 de taza de agua', '1 Kg de papa sancochada', 'queso parmesano', 'comino', 'oregano', 'sal', 'pimienta', 'aceitunas', 'huevos duros'],
     ['1. Remojar el pan con la leche y el agua y luego licuar.', '2. Hacer un aderezo con la cebolla bien picadita, los ajos, el ají molido, la pimienta, el comino, el orégano y la sal.', '3. Cuando el aderezo esté bien cocido, agregar el pan licuado.', '4. Cuando empiece a espesar, agregar el atún y el queso parmesano.', '5. Servir con arroz graneado (opcional), papas sancochadas, aceitunas y huevo duro.', 'Sugerencias:', 'Se debe desmenuzar el atún antes de vaciarlo a la olla.', 'Se puede utilizar atún o sardina.', 'Si la salsa se seca mucho agregar un poquito de agua para darle consistencia.', 'Si se emplea pescado, se debe sancochar y luego desmenuzar.'],
     'Fácil',
-    'Bajo'
-);
+    'Bajo',
+    'Una deliciosa preparación a base de atún, pan y ají.'
+)
 const recipe2 = new Recipe(
     'Ají de huevos',
     'Cuatro Porciones',
     'aji_huevos',
     ['aceite', 'cerdo', 'cebolla', 'pimenton', 'huevo', 'papa', 'sal', 'pimienta', 'aji_molido'],
-    ['½ taza de Aceite', '½ Kg de carne de cerdo cocido', '2 cebollas finamente picadas', '1 cdta. de pimentón', '6 huevos', '6 papas sancochadas', 'sal', 'pimienta', 'ají molido al gusto']
+    ['½ taza de Aceite', '½ Kg de carne de cerdo cocido', '2 cebollas finamente picadas', '1 cdta. de pimentón', '6 huevos', '6 papas sancochadas', 'sal', 'pimienta', 'ají molido al gusto'],
     ['1. Calentar el aceite y freír hasta dorar la carne de cerdo cortada en trozos pequeños y previamente cocida.', '2. Incorporar la cebolla, el pimentón, la sal, la pimienta y el ají.', '3. Cocinar unos minutos y añadir los huevos mezclados.', 'Dejar que cuaje y servir sobre las papas sancochadas.'],
     'Fácil',
-    'Medio'
+    'Medio',
+    'Una receta a abse de huevos y cerdo, con papitas sancochadas.'
 )
 const recipe3 = new Recipe(
     'Ají verde relleno',
@@ -47,7 +61,8 @@ const recipe3 = new Recipe(
     ['12 ajíes frescos', '300 gramos de carne molida de pollo', '100 gramos de arvejas', '200 gramos de queso parmesano', '2 tazas de choclo desgranado', '4 tomates picados', '1 cebolla mediana', '2 huevos', 'perejil', 'culantro', '1 cubito de pollo', '125 gramos de margarina', '1/2 taza de leche evaporada', '1/2 taza de harina', '1 litro de agua', 'nuez moscada', 'sal', 'pimienta'],
     ['1. Cortar el extremo de los ajíes con el tronquito. Limpiar las semillas y las venas con cuidado.', '2. En un recipiente con agua fría remojar los ajíes por 4 horas cambiándoles el agua varias veces.', '3. Poner los ajíes en una olla para que den un hervor de 2 minutos. Botar el agua, enjuagar en agua fría varias veces y poner nuevamente en la olla a dar un hervor de 5 minutos. Luego colar.', '4. Acomodar los choclos desgranados y sancochados en una fuente refractaria enmantequillada. Rellenar los ajíes y colocarlos encima de los choclos.', 'Para el Relleno:', '1. Hacer un picadillo dorando las cebollas picadas y los ajos. Luego agregar sal, pimienta, orégano, perejil picado y tomate picado.', '2. Añadir la carne molida con el cubito disuelto en un poquito de agua tibia y dejar cocinar unos minutos. Luego agregar las pasas, las arvejitas cocidas y los huevos duros picados.', 'Para la Salsa Blanca', '1. Preparar una salsa blanca con la margarina, la harina, la leche, el agua y la nuez moscada. Bañar los ajíes con esta salsa y espolvorear con queso parmesano.', '2. Llevar al horno precalentado a 350° F (180° C) y gratinar por 45 minutos.'],
     'Dificil',
-    'Medio'
+    'Medio',
+    'Ajíes rellenos de pollo y gratinado con parmesano.'
 )
 const recipe4 = new Recipe(
     'Alcachofas rellenas',
@@ -57,7 +72,8 @@ const recipe4 = new Recipe(
     ['12 fondos de alcachofas sancochadas al dente', '1 kilo de pulpa de cangrejo precocida', '1 taza de mayonesa'],
     ['1. Sancochar los fondos de alcachofa.', '2. Colocarlos en una fuente engrasada, resistente al horno.', '3. Mezclar la pulpa de cangrejo con la mayonesa y salpimentar.', '4. Rellenar los fondos de alcachofa.', '5. Llevar al horno a gratinar por 10 minutos.', 'Sugerencia:', 'Se puede cambiar la pulpa de cangrejo por pollo, atún o jamón.'],
     'Fácil',
-    'Bajo'
+    'Bajo',
+    'El corazón de las alcachofas sancochadas con cangrejo y mayonesa.'
 )
 const recipe5 = new Recipe(
     'Alcachofas rellenas con conchas',
@@ -67,7 +83,8 @@ const recipe5 = new Recipe(
     ['6 fondos de alcachofas grandes', '6 cucharadas de harina sin preparar', '1/2 taza de queso parmesano', '6 docenas de conchas chicas', '2 tazas de leche', '2 limones', 'Aceite', 'Mantequilla', 'Sal', 'Pimienta'],
     ['1. Poner en abundante agua un chorrito de limón, un chorrito de aceite y una cucharada de harina diluida en agua. Cuando rompa el hervor colocar los fondos de alcachofa y cocinar hasta que estén suaves.', '2. Limpiar las conchas y dividirlas en dos partes.', '3. A una parte de las conchas retirarles el coral y reservar. Con la parte blanca de las conchas preparar un cebiche con el limón, la sal y la pimienta. Luego colarlo y colocarlo sobre los fondos', '4. Preparar una salsa blanca dura con la harina, la mantequilla, la leche, el queso y sazonar.', '5. Licuar los corales y mezclarlos con la salsa blanca y con las conchas que se dejaron separadas.', '6. Enmantequillar un molde y acomodar los fondos con el cebiche y la mezcla con la salsa blanca.', '7. Gratinar por 10 minutos a horno moderado y servir bien caliente.'],
     'Media',
-    'Media'
+    'Media',
+    'Una deliciosa combinación de conchas marinas y el corazón de las alcachofas.'
 )
 const recipes = [recipe1,recipe2,recipe3,recipe4,recipe5];
 
