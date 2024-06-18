@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev's Footer</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
@@ -18,21 +26,49 @@
     </header>
     <main>
         <section class="intro">
-            <h1>DEV'S FOOTER</h1>
-            <img class="logo">
-            <ul>
-                <input type="checkbox" name="subscribe" value="newsletter"> INSTRUCTION
-                <input type="checkbox" name="subscribe" value="newsletter"> INSTRUCTION
-                <input type="checkbox" name="subscribe" value="newsletter"> INSTRUCTION
-            </ul>
+            <section id="hero_logo">
+                <div id="h1">
+                    <p>function</p>
+                    <h1>Dev's_Food_er</h1>
+                    <p class="parameter">()</p>
+                </div>
+                <div id="logo">
+                    <p>{</p>
+                    <img src="img/logo.jpeg" alt="logo" class="logo">
+                    <p>}</p>
+                </div>
+            </section>
+            <section id="instructions">
+                <ul>
+                    <li id="inst_1">
+                        <img src="img/check.png" alt="check">
+                        <p>Selecciona tus ingredientes</p>
+                    </li>
+                    <li id="inst_2">
+                        <img src="img/check.png" alt="check">
+                        <p>Selecciona tu receta favorita</p>
+                    </li>
+                    <li id="inst_3">
+                        <img src="img/check.png" alt="check">
+                        <p>¡A cocinar!</p>
+                    </li>
+                </ul>
+            </section>
         </section>
-
-        <h2>Ingredientes</h2>
-
-        <section id="ingredients_container" class="ingredients_container">
+        <section id="ingredients">
+            <div id="ing_elements">
+            <p id="const">const</p>
+            <h2 id="hero_h2">Ingredientes</h2>
+            <p id="iqual">=</p>
+            </div>
+            <section id="list_ingredients">
+                <p class="corch">[</p>
+                <section id="ingredients_container" class="ingredients_container">
+                </section>
+                <p class="corch">]</p>
+            </section>
+            <button id="select_ingredients_btn">Seleccionar Ingredientes</button>
         </section>
-        <button id="select_ingredients_btn">Seleccionar Ingredientes</button>
-
     </main>
     <footer>
     </footer>

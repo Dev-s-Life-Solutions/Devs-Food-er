@@ -1,0 +1,336 @@
+body {
+    background-color: #ea777b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav_bar{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+header .nav_bar a{
+    font-family: 'Teko';
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+
+main .intro {
+    background-image: url(../img/madera.jpg);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+
+}
+
+main .intro #hero_logo{
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+
+}
+
+main .intro #h1 {
+    display: flex;
+}
+
+main .intro #h1 h1, p {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+main .intro #h1 p {
+    color: #42a1e8;
+    margin-right: 20px;
+}
+
+main .intro #h1 .parameter {
+    color: yellow;
+}
+
+main .intro #logo p {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 250px;
+    margin: 5px 0;
+    color: yellow;
+}
+
+main .intro #hero_logo img {
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
+
+main .intro #logo {
+    display: flex;
+    align-items: center;
+}
+
+main .intro #instructions{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+#instructions #inst_1, #inst_2, #inst_3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main .intro #instructions img{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #f2eabc;
+    border-radius: 30px;
+}
+
+main .intro #instructions p{
+    font-family: 'Teko';
+    font-size: 100px;
+    text-decoration: none;
+    color: #f2eabc;
+    margin: 0;
+    background-color: black;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main #ingredients, #selection_page{
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+
+}
+
+#ing_elements{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
+ #ingredients #const, #hero_h2, #iqual, .corch{
+    font-family: 'Fira Code', monospace;
+} 
+
+#ingredients #const{
+    color: #608dac;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#ingredients #hero_h2{
+    color: #4eb4cb;
+    font-size: 50px;
+    margin-top: 19px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+#ingredients #iqual{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#list_ingredients{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center; 
+}
+
+.corch{
+    color: yellow;
+    font-size: 250px;
+}
+
+#ingredients_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ingredient {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px; 
+    display : flex;
+    justify-content: space-around;
+}
+
+.ingredient img{
+    width: 50px;
+    height: auto;
+    margin-inline: 10px;
+}
+
+.ingredient span {
+    font-size: 20px; 
+    color: #63afea;
+    font-family: 'Fira Code', monospace;
+}
+#select_ingredients_btn{
+    margin-top: 50px;
+    font-family: 'Teko';
+    font-size: 50px;
+    background-color: #47bb8b;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+footer{
+    margin-top: 100px;
+}
+
+
+#selection_hero p, h1, .parameter {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#selection_hero, #recipe_cont{
+    display: flex;
+}
+#selection_hero p{
+    color: #42a1e8;
+    margin-right: 20px
+}
+#selection_hero .parameter{
+    color: yellow;
+}
+
+#selection_hero{
+    margin-bottom: 25px;
+}
+
+#selected_recipe_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    overflow: hidden;
+    
+}
+
+#r_key{
+    width: 60px;
+    height: 480px;
+    margin-top: -13px;
+    
+    
+}
+
+#l_key{
+    width: 60px;
+    height: 450px;
+   
+}
+
+#selected_recipe_container div{
+    display: none;
+    width: 240px;
+    height: 560px;
+    border-radius: 25px;
+    background-color: #47bb8b;
+    border: 10px solid black;
+   
+}
+
+#selected_recipe_container > div.visible {
+    display: block;
+}
+
+#selected_recipe_container div > img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+#selected_recipe_container div > h2{
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#selected_recipe_container div > p{
+    font-family: 'Fira Code', monospace;
+    font-size:20px;
+    padding-right: 10px;
+}
+
+#prev_btn, #next_btn{
+    height: 60px;
+    margin-top: 220px;
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+    border: 5px solid black;
+
+}
+#prev_btn{
+    margin-right: 20px;
+}
+#next_btn{
+    margin-left: 20px;
+}
+
+#back_btn{
+    margin-top: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    border: 5px solid black;
+}
+
+#back_btn a{
+    text-decoration: none;
+    color: black;
+}
