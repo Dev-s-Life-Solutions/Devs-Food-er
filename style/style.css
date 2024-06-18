@@ -135,3 +135,40 @@ main .intro #instructions p{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+main #ingredients {
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+
+}
+
+ #ingredients #const, #hero_h2, #iqual, .corch{
+    font-family: 'Fira Code', monospace;
+} 
+
+#ingredients #const{
+    color: #608dac;
+    font-size: 70px;
+}
+
+#ingredients #hero_h2{
+    color: #4eb4cb;
+    font-size: 70px;
+}
+
+#ingredients #iqual{
+    color: white;
+    font-size: 70px;
+}
+
+.corch{
+    color: yellow;
+}
