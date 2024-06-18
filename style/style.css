@@ -1,0 +1,137 @@
+body {
+    background-color: #ea777b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav_bar{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+header .nav_bar a{
+    font-family: 'Teko';
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+
+main .intro {
+    background-image: url(../img/madera.jpg);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+
+}
+
+main .intro #hero_logo {
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+
+}
+
+main .intro #h1 {
+    display: flex;
+}
+
+main .intro #h1 h1, p {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+main .intro #h1 p {
+    color: #42a1e8;
+    margin-right: 20px;
+}
+
+main .intro #h1 #parameter {
+    color: yellow;
+}
+
+main .intro #logo p {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 250px;
+    margin: 5px 0;
+    color: yellow;
+}
+
+main .intro #hero_logo img {
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
+
+main .intro #logo {
+    display: flex;
+    align-items: center;
+}
+
+main .intro #instructions{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+#instructions #inst_1, #inst_2, #inst_3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main .intro #instructions img{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #f2eabc;
+    border-radius: 30px;
+}
+
+main .intro #instructions p{
+    font-family: 'Teko';
+    font-size: 100px;
+    text-decoration: none;
+    color: #f2eabc;
+    margin: 0;
+    background-color: black;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
