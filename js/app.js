@@ -1,3 +1,39 @@
+'use strict';
+
+function AppState() {
+    this.allIngredients = [];
+    this.allRecipes = [];
+    this.selectedIngredients = [];
+    this.filteredRecipes = [];
+}
+AppState.prototype.instantiateIngredients = function () {
+    this.allIngredients = [
+        new Ingredient('atun', 'Atún', '/img/atun.jpg'),
+        new Ingredient('cebolla', 'Cebolla', '..\img\cebolla.jpg'),
+        new Ingredient('pan', 'Pan', '..\img\pan.jpg'),
+        new Ingredient('leche', 'Leche', '..\img\leche.jpg'),
+        new Ingredient('papa', 'Papa', '..\img\papa.jpg'),
+        new Ingredient('queso_parmesano', 'Queso Parmesano', '..\img\queso_parmesano.jpg'),
+        new Ingredient('comino', 'Comino', '..\img\comino.jpg'),
+        new Ingredient('oregano', 'Orégano', '..\img\oregano.jpg'),
+        new Ingredient('pimienta', 'Pimienta', '..\img\pimienta.jpg'),
+        new Ingredient('aceituna', 'Aceituna', '..\img\aceituna.jpg'),
+        new Ingredient('huevo', 'Huevo', '..\img\huevo.jpg'),
+        new Ingredient('aceite', 'Aceite', '..\img\aceite.jpg'),
+        new Ingredient('cerdo', 'Cerdo', '..\img\cerdo.jpg'),
+        new Ingredient('pimenton', 'Pimenton', '..\img\pimenton.jpg'),
+
+    ];
+}
+AppState.prototype.instantiateRecipes= function(){
+    this.allRecipes = [recipe1,recipe2,recipe3,recipe4,recipe5];
+}
+
+const app = new AppState();
+app.instantiateIngredients();
+app.instantiateRecipes();
+console.log(app.allIngredients);
+console.log(app.allRecipes);
 
 const select_ingredients_button = document.getElementById('select_ingredients_btn');
 const selected_recipe_container = document.getElementById('selected_recipe_container');
@@ -11,34 +47,35 @@ function getSelectedIngredients() {
 }
 
 function filterRecipesByIngredients(selectedIngredients) {
-    return recipes.filter(recipe =>
+    return app.allRecipes.filter(recipe =>
         selectedIngredients.every(ingredient => recipe.ingredients.includes(ingredient))
     );
 }
 
 if (select_ingredients_button) {
+    const container = document.getElementById('ingredients_container');
+    container.innerHTML = '';
+    app.allIngredients.forEach(ingredient => {
+        container.appendChild(ingredient.render());
+    });
     select_ingredients_button.addEventListener('click', function () {
-        const selectedIngredients = getSelectedIngredients();
-        if (selectedIngredients.length > 0) {
-            filteredRecipes = filterRecipesByIngredients(selectedIngredients);
-            console.log('Filtered Recipes:', filteredRecipes);
-
-
-            select_ingredients_button.hidden = true;
-            localStorage.setItem('filteredRecipes', JSON.stringify(filteredRecipes));
+        app.selectedIngredients = getSelectedIngredients();
+        if (app.selectedIngredients.length > 0) {
+            localStorage.setItem('app', JSON.stringify(app));
             window.location.href = 'selected_recipes.html';
         } else {
             alert('Selecciona al menos un ingrediente.');
         }
     });
-    renderIngredients();
 }
 
 if (selected_recipe_container) {
-    const ls_filtered_recipes = JSON.parse(localStorage.getItem('filteredRecipes'));
-    console.log(ls_filtered_recipes);
-    ls_filtered_recipes.forEach(recipe => {
-        const cardRecipe = renderRecipe(recipe);
+    const lsApp = JSON.parse(localStorage.getItem('app'));
+    app.filteredRecipes = filterRecipesByIngredients(lsApp.selectedIngredients);
+    console.log('Filtered Recipes:', app.filteredRecipes);
+
+    app.filteredRecipes.forEach(recipe => {
+        const cardRecipe = recipe.renderCard();
         console.log(cardRecipe);
         selected_recipe_container.appendChild(cardRecipe);
     });
@@ -46,57 +83,22 @@ if (selected_recipe_container) {
 
 const full_recipe_container = document.getElementById('full_recipe_container');
 if (full_recipe_container) {
-    const recipe = JSON.parse(localStorage.getItem('selectedRecipe'));
-    if (recipe) {
-        const recipeName = document.createElement('h2');
-        const recipeServings = document.createElement('p');
-        const recipeDifficulty = document.createElement('p');
-        const recipeImg = document.createElement('img');
-        const recipeListIngrt = document.createElement('ul');
-        const recipeListSteps = document.createElement('ol');
-        const recipeCost = document.createElement('p');
-
-        recipeName.textContent = recipe.name;
-        recipeServings.textContent = recipe.servings;
-        recipeDifficulty.textContent = recipe.difficulty;
-        recipeImg.src = recipe.img;
-        recipeImg.alt = recipe.name;
-        recipeListIngrt.textContent = 'Ingredientes :';
-        recipeCost.textContent = recipe.cost;
-        recipeListSteps.textContent = 'Pasos a Seguir :';
-
-        full_recipe_container.appendChild(recipeName);
-        full_recipe_container.appendChild(recipeServings);
-        full_recipe_container.appendChild(recipeDifficulty);
-        full_recipe_container.appendChild(recipeImg);
-        full_recipe_container.appendChild(recipeListIngrt);
-        recipe.ingredientsDetailed.forEach(ingredientsDetailed => {
-            let item = document.createElement('li');
-            item.textContent = ingredientsDetailed;
-            full_recipe_container.appendChild(item);
-        });
-        full_recipe_container.appendChild(recipeListSteps);
-
-        recipe.steps.forEach(steps => {
-            let item = document.createElement('li');
-            item.textContent = steps;
-            full_recipe_container.appendChild(item);
-        });
-
-        recipeListSteps.appendChild(recipeSteps);
-        full_recipe_container.appendChild(recipeCost);
-    } else {
+    const lsRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
+    if (lsRecipe) {
+       const selectedRecipe = new Recipe(lsRecipe.name, lsRecipe.servings, lsRecipe.img, lsRecipe.ingredients, lsRecipe.ingredientsDetailed, lsRecipe.steps, lsRecipe.difficulty, lsRecipe.cost, lsRecipe.preview);
+       full_recipe_container.appendChild(selectedRecipe.renderPage());
+    } else 
         container.textContent = 'No se encontró la receta seleccionada.';
     }
-}
+
 
 const container_all_recipes = document.getElementById('container_all_recipes');
 if (container_all_recipes) {
 
-        recipes.forEach(recipe => {
-            const card = renderRecipe(recipe);
-            container_all_recipes.appendChild(card);
-        });
+    app.allRecipes.forEach(recipe => {
+        const card = recipe.renderCard();
+        container_all_recipes.appendChild(card);
+    });
 }
 
 
