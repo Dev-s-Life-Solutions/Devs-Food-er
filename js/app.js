@@ -26,7 +26,7 @@ AppState.prototype.instantiateIngredients = function () {
     ];
 }
 AppState.prototype.instantiateRecipes= function(){
-    this.allRecipes = [recipe1,recipe2,recipe3,recipe4,recipe5];
+    this.allRecipes = [recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11];
 }
 
 const app = new AppState();

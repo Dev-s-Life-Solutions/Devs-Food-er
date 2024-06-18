@@ -171,60 +171,72 @@ const recipe5 = new Recipe(
 
 
 
-// const recipe6 = new Recipe(
-//     'Alitas de pollo escabechadas',
-//     'Cuatro Porciones',
-//     'alitas_escabechadas',
-//     ['12 alitas de pollo', '4 dientes de ajo picados', 'Harina en cantidad necesaria', '2 hojas de laurel', '½ taza de aceite', '1 cebolla cortada en aros', '1 cdta. de pimentón', 'sal', 'pimienta'],
-//     ['1. Salpimentar y enharinar las alitas, freírlas en el aceite caliente, retirarlas sobre papel absorbente y luego ponerlas en un recipiente.', '2. Freír en el mismo aceite ajos, laurel, cebolla y pimentón.', '3. Agregar el tomillo, el vinagre y la miel.', '4. Dejar hervir y volcar esta mezcla sobre las alitas.', '5. Dejar macerar por 6 horas o desde el día anterior.', 'Sugerencia: ', 'Si prefiere, reemplace las alitas de pollo por trocitos de pechuga o pierna de pollo.'],
-//     'Fácil',
-//     'Baja'
-// )
-// const recipe7 = new Recipe(
-//     'Alitas con tausí',
-//     'Seis Porciones',
-//     'alitas_tausi',
-//     ['8 cucharadas de aceite', '1 kilo de alitas de pollo', '3 dientes de ajos', '30 gramos de tausí o frijolitos de soya', '6 cucharaditas de sillao', '1 cucharadita de sazonador', '1 taza de caldo', '4 cucharaditas de chuño', 'sal'],
-//     ['1. Cortar las alitas en trozos. Dorarlos en aceite caliente con los ajos y el tausí chancados.', '2. Sazonar con la sal, el sillau, el sazonador y añadir el caldo.', '3. Cocinar unos minutos y espesar con el chuño diluido en un poquito de agua fría. Dejar dar un hervor.', '4. Se puede servir como piqueo o acompañar con arroz.', 'Sugerencia: ', 'Se puede preparar también con trozos de pollo o corazones de pollo. Si desea agregar cebolla china picadita antes de echar el chuño.'],
-//     'Fácil',
-//     "Media"
-// )
-// const recipe8 = new Recipe(
-//     'Anticuchos de corazón',
-//     'Cuatro Porciones',
-//     'anticucho_corazon',
-//     ['1 corazón de vaca', '1 cda. de ajos molidos', '½ taza de vinagre', '1 taza de cerveza negra', '2 cdas. de orégano', '4 cdas. de ají panca molido', '½ cdta. de comino', 'sal', 'pimienta', 'Ají verde al gusto'],
-//     ['1. Cortar el corazón en trozos chicos y enjuagarlos bien.', '2. Condimentar con ajos, sal, pimienta, comino, orégano, vinagre, cerveza, ají verde y ají panca.', '3. Dejar reposar 2 horas por lo menos.', '4. Ensartar en los palitos 3 o 4 trozos y cocinarlos en la parrilla.', '5. Mientras se cocinan, se untan con el aderezo con una brocha hecha de tiras de panca de choclo, cuidando que no se sequen.', '6. Servir con papas y choclos sancochados y ají molido solo o mezclado con cebolla china.', 'Variaciones interesantes:', 'Pulpo anticuchero: cocinar el pulpo y luego armar los anticuchos con los sabores de la preparación de anticuchos de corazón.'],
-//     'Fácil',
-//     'Bajo'
-// )
-// const recipe9 = new Recipe(
-//     'Anticuchos de pescado',
-//     'Cuatro Porciones',
-//     'anticucho_pescado',
-//     ['1½ kg de pescado', '2 cdas. de ají panca molido', '½ taza de vinagre', 'sal', 'pimienta', 'achiote', 'comino'],
-//     ['1. Cortar el pescado en cuadrados de 3 cm y ponerlos a macerar 1 hora en la mezcla de vinagre, ajos, ají, achiote, sal, pimienta y comino.', '2. Insertar los pedazos de pescado en cañitas o alambres.', 'Cocinar en el brasero o a la plancha.', 'Servir con la salsa de ají.'],
-//     'Facil',
-//     'Bajo'
-// )
-// const recipe10 = new Recipe(
-//     'Arroz con huevo cremoso',
-//     'Cuatro Porciones',
-//     'arroz_huevo_cremoso',
-//     ['1 cucharadita de aceite.', '2 tallos de cebolla larga (cebolla china). ', '2 tazas de arroz (de preferencia de del día anterior)', '1/4 de quesito desmenuzado', '1 o 2 huevos completos.', '1/2 cucharadita de sal.', '2 cucharadas de leche.', 'cilantro o culantro al gusto'],
-//     ['1. De esta forma te rinde más y se distribuye mejor su sabor y nutrientes. Bate los huevos con la sal hasta que queden amarillitos.', '2. Para cocinar correctamente primero pon a calentar la cacerola y luego adiciona el poquito de aceite.', '3. Agrega la cebollita junca (si la tienes) ralladita y sofríela un poco', '4. Agrega el arroz, el quesito y revuélvelo bien', '5. Una vez lo tengas caliente, agrega los huevos batidos, la sal, la leche y continúa mezclando hasta que el arroz quede todo amarillo', '6. El tiempo para cocinarlo dependerá de tu gusto, a mayor tiempo estará más seco, a menor tiempo más cremoso. Sírvelo con cilantro picado.'],
-//     'Fácil',
-//     'Bajo'
-// )
-// const recipe11 = new Recipe(
-//     'Albóndigas de lentejas y culantro en salsa de tomate',
-//     'Cuatro Porciones',
-//     'albondigas_lentejas',
-//     ['2 tazas de lentejas remojadas desde el día anterior', ' 2 dientes de ajo rallados', '2 ramas de cilantro picado', ' 1 huevo batido', ' 3 cucharadas de miga de pan', 'Media cucharadita de sal', 'Media cucharadita de Comino molido'],
-//     ['1. Remoja las lentejas por una noche, luego de remojadas, escúrrelas y mézclalas con el ajo, el cilantro y la miga de pan.', '2. Después tritura toda la mezcla con ayuda de un cuchillo o mortero, o si prefieres licúalas.', '3. Arma bolitas y refrigéralas por una hora.', '4. Para la salsa, calienta una sartén y mezcla todos los ingredientes, cocínalos a fuego medio-bajo durante 20 minutos.', '5. En otra sartén pon un poco de aceite, sella las albóndigas por todos sus lados, agrega la salsa y déjalas cocinar por 10 minutos más.', '6. Sírvelas con quesito desmenuzado por encima.'],
-//     'Fácil',
-//     'Bajo'
-// )
+const recipe6 = new Recipe(
+    'Alitas de pollo en escabeche',
+    'Cuatro Porciones',
+    'alitas_escabechadas.jpg',
+    ['pollo', 'ajo', 'harina', 'laurel', 'aceite', 'cebolla', 'pimenton', 'sal', 'pimienta'],
+    ['12 alitas de pollo', '4 dientes de ajo picados', 'Harina en cantidad necesaria', '2 hojas de laurel', '½ taza de aceite', '1 cebolla cortada en aros', '1 cdta. de pimentón', 'sal', 'pimienta'],
+    ['1. Salpimentar y enharinar las alitas, freírlas en el aceite caliente, retirarlas sobre papel absorbente y luego ponerlas en un recipiente.', '2. Freír en el mismo aceite ajos, laurel, cebolla y pimentón.', '3. Agregar el tomillo, el vinagre y la miel.', '4. Dejar hervir y volcar esta mezcla sobre las alitas.', '5. Dejar macerar por 6 horas o desde el día anterior.', 'Sugerencia: ', 'Si prefiere, reemplace las alitas de pollo por trocitos de pechuga o pierna de pollo.'],
+    'Fácil',
+    'Baja',
+    'Deliciosas alitas de pollo con la clásica sazón del escabeche'
+)
+const recipe7 = new Recipe(
+    'Alitas con tausí',
+    'Seis Porciones',
+    'alitas_tausi.jpg',
+    ['aceite', 'pollo', 'ajo', 'tausi', 'sillao', 'sazonador', 'caldo', 'chuño', 'sal'],
+    ['8 cucharadas de aceite', '1 kilo de alitas de pollo', '3 dientes de ajos', '30 gramos de tausí o frijolitos de soya', '6 cucharaditas de sillao', '1 cucharadita de sazonador', '1 taza de caldo', '4 cucharaditas de chuño', 'sal'],
+    ['1. Cortar las alitas en trozos. Dorarlos en aceite caliente con los ajos y el tausí chancados.', '2. Sazonar con la sal, el sillau, el sazonador y añadir el caldo.', '3. Cocinar unos minutos y espesar con el chuño diluido en un poquito de agua fría. Dejar dar un hervor.', '4. Se puede servir como piqueo o acompañar con arroz.', 'Sugerencia: ', 'Se puede preparar también con trozos de pollo o corazones de pollo. Si desea agregar cebolla china picadita antes de echar el chuño.'],
+    'Fácil',
+    "Media",
+    'Unas alitas con sabor oriental que no te puedes perder'
+)
+const recipe8 = new Recipe(
+    'Anticuchos de corazón',
+    'Cuatro Porciones',
+    'anticucho_corazon.jpg',
+    ['corazon_vaca', 'ajo', 'vinagre', 'cerveza_negra', 'oregano', 'aji_panca', 'comino', 'sal', 'pimienta', 'aji_verde'],
+    ['1 corazón de vaca', '1 cda. de ajos molidos', '½ taza de vinagre', '1 taza de cerveza negra', '2 cdas. de orégano', '4 cdas. de ají panca molido', '½ cdta. de comino', 'sal', 'pimienta', 'Ají verde al gusto'],
+    ['1. Cortar el corazón en trozos chicos y enjuagarlos bien.', '2. Condimentar con ajos, sal, pimienta, comino, orégano, vinagre, cerveza, ají verde y ají panca.', '3. Dejar reposar 2 horas por lo menos.', '4. Ensartar en los palitos 3 o 4 trozos y cocinarlos en la parrilla.', '5. Mientras se cocinan, se untan con el aderezo con una brocha hecha de tiras de panca de choclo, cuidando que no se sequen.', '6. Servir con papas y choclos sancochados y ají molido solo o mezclado con cebolla china.', 'Variaciones interesantes:', 'Pulpo anticuchero: cocinar el pulpo y luego armar los anticuchos con los sabores de la preparación de anticuchos de corazón.'],
+    'Fácil',
+    'Bajo',
+    'La clásica receta tradicional de anticuchos, tan deliciosos como los de carretera'
+)
+const recipe9 = new Recipe(
+    'Anticuchos de pescado',
+    'Cuatro Porciones',
+    'anticucho_pescado.jpg',
+    ['pescado', 'aji_panca', 'vinagre', 'sal', 'pimienta', 'achiote', 'comino'],
+    ['1½ kg de pescado', '2 cdas. de ají panca molido', '½ taza de vinagre', 'sal', 'pimienta', 'achiote', 'comino'],
+    ['1. Cortar el pescado en cuadrados de 3 cm y ponerlos a macerar 1 hora en la mezcla de vinagre, ajos, ají, achiote, sal, pimienta y comino.', '2. Insertar los pedazos de pescado en cañitas o alambres.', 'Cocinar en el brasero o a la plancha.', 'Servir con la salsa de ají.'],
+    'Facil',
+    'Bajo',
+    'Una versión más moderna de los clásicos anticuchos, pero con pescado'
+)
+const recipe10 = new Recipe(
+    'Arroz con huevo cremoso',
+    'Cuatro Porciones',
+    'arroz_huevo_cremoso.jpg',
+    ['aceite', 'cebolla_china', 'arroz', 'queso', 'huevo', 'sal', 'leche', 'culantro'],
+    ['1 cucharadita de aceite.', '2 tallos de cebolla larga (cebolla china). ', '2 tazas de arroz (de preferencia de del día anterior)', '1/4 de quesito desmenuzado', '1 o 2 huevos completos.', '1/2 cucharadita de sal.', '2 cucharadas de leche.', 'cilantro o culantro al gusto'],
+    ['1. De esta forma te rinde más y se distribuye mejor su sabor y nutrientes. Bate los huevos con la sal hasta que queden amarillitos.', '2. Para cocinar correctamente primero pon a calentar la cacerola y luego adiciona el poquito de aceite.', '3. Agrega la cebollita junca (si la tienes) ralladita y sofríela un poco', '4. Agrega el arroz, el quesito y revuélvelo bien', '5. Una vez lo tengas caliente, agrega los huevos batidos, la sal, la leche y continúa mezclando hasta que el arroz quede todo amarillo', '6. El tiempo para cocinarlo dependerá de tu gusto, a mayor tiempo estará más seco, a menor tiempo más cremoso. Sírvelo con cilantro picado.'],
+    'Fácil',
+    'Bajo',
+    'Para los amantes de las torrejitas, ésta es su receta'
+)
+const recipe11 = new Recipe(
+    'Albóndigas de lentejas, culantro y tomate',
+    'Cuatro Porciones',
+    'albondigas_lentejas.jpg',
+    ['lentejas', 'ajo', 'culantro', 'huevo', 'pan', 'sal', 'comino'],
+    ['2 tazas de lentejas remojadas desde el día anterior', ' 2 dientes de ajo rallados', '2 ramas de cilantro o culantro picado', ' 1 huevo batido', ' 3 cucharadas de miga de pan', 'Media cucharadita de sal', 'Media cucharadita de Comino molido'],
+    ['1. Remoja las lentejas por una noche, luego de remojadas, escúrrelas y mézclalas con el ajo, el cilantro y la miga de pan.', '2. Después tritura toda la mezcla con ayuda de un cuchillo o mortero, o si prefieres licúalas.', '3. Arma bolitas y refrigéralas por una hora.', '4. Para la salsa, calienta una sartén y mezcla todos los ingredientes, cocínalos a fuego medio-bajo durante 20 minutos.', '5. En otra sartén pon un poco de aceite, sella las albóndigas por todos sus lados, agrega la salsa y déjalas cocinar por 10 minutos más.', '6. Sírvelas con quesito desmenuzado por encima.'],
+    'Fácil',
+    'Bajo',
+    'Deliciosa receta para no botar las lentejitas del dia anterior'
+)
 // const recipe12 = new Recipe(
 
 // )

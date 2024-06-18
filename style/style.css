@@ -232,7 +232,7 @@ footer{
 }
 
 
-#selection_hero p, h1, .parameter {
+#selection_hero p, h1, .parameter2 {
     font-family: 'Fira Code', monospace;
     color: #f2eabc;
     font-size: 50px;
@@ -246,7 +246,7 @@ footer{
     color: #42a1e8;
     margin-right: 20px
 }
-#selection_hero .parameter{
+#selection_hero .parameter2{
     color: yellow;
 }
 
@@ -298,7 +298,7 @@ footer{
 
 #selected_recipe_container div > h2{
     font-family: 'Fira Code', monospace;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -333,4 +333,150 @@ footer{
 #back_btn a{
     text-decoration: none;
     color: black;
+}
+
+#cont_all_recipes{
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 750px;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}
+
+#hero_logo_r{
+    margin-bottom: 30px;
+}
+
+#h1_r{
+    display: flex;
+}
+#const_r, #hero_h1, #iqual_r{
+    font-family: 'Fira Code', monospace;
+    font-size: 60px;
+}
+
+#const_r{
+    color: #608dac;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+#iqual_r{
+    color: yellow;
+}
+#container_all_recipes{
+    height: 580px;
+    display: grid;
+    overflow-y: scroll; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+#container_all_recipes div{
+
+    width: 240px;
+    height: 560px;
+    border-radius: 25px;
+    background-color: #47bb8b;
+    border: 10px solid black;
+}
+#container_all_recipes div > img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+#container_all_recipes div > h2{
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#container_all_recipes div > p{
+    font-family: 'Fira Code', monospace;
+    font-size:20px;
+    padding-right: 10px;
+}
+#corch_all_r{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center; 
+}
+.corch_r{
+    color: yellow;
+    font-family: 'Fira Code', monospace;
+    font-size: 250px;
+    
+}
+
+#cont_recipe{
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}
+
+#full_recipe_container article{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+
+#full_recipe_container article > h2{
+    font-family: 'Fira Code', monospace;
+    font-size:60px;
+    color: #47bb8b;
+    padding-left: 100px;
+}
+
+#full_recipe_container article > img{
+    width: 700px;
+    height: 700px;
+    margin-top: 25px;
+    padding-left: 200px;
+   
+}
+
+#full_recipe_container article > p, h3, ol, ul{
+    font-family: 'Fira Code', monospace;
+    font-size:20px;
+    color: #7ed6fb;
+    padding-left: 100px;
+    padding-right: 25px;
+}
+#full_recipe_container article > h3{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #47bb8b;
+    
+}
+
+#full_recipe_container article > ul{
+    list-style-type: disc; 
+    padding-left: 120px;
+}
+#full_recipe_container article > ul > li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#full_recipe_container article > ol > li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#cooked_recipe{
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    border: 5px solid black;
 }
