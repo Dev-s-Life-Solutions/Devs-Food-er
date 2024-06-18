@@ -40,7 +40,7 @@ main .intro {
 
 }
 
-main .intro #hero_logo {
+main .intro #hero_logo{
     background-color: #012434;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ main .intro #h1 p {
     margin-right: 20px;
 }
 
-main .intro #h1 #parameter {
+main .intro #h1 .parameter {
     color: yellow;
 }
 
@@ -136,7 +136,7 @@ main .intro #instructions p{
     padding-right: 10px;
 }
 
-main #ingredients {
+main #ingredients, #selection_page{
     background-color: #012434;
     display: flex;
     justify-content: center;
@@ -218,4 +218,119 @@ main #ingredients {
     font-size: 20px; 
     color: #63afea;
     font-family: 'Fira Code', monospace;
+}
+#select_ingredients_btn{
+    margin-top: 50px;
+    font-family: 'Teko';
+    font-size: 50px;
+    background-color: #47bb8b;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+footer{
+    margin-top: 100px;
+}
+
+
+#selection_hero p, h1, .parameter {
+    font-family: 'Fira Code', monospace;
+    color: #f2eabc;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#selection_hero, #recipe_cont{
+    display: flex;
+}
+#selection_hero p{
+    color: #42a1e8;
+    margin-right: 20px
+}
+#selection_hero .parameter{
+    color: yellow;
+}
+
+#selection_hero{
+    margin-bottom: 25px;
+}
+
+#selected_recipe_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    overflow: hidden;
+    
+}
+
+#r_key{
+    width: 60px;
+    height: 480px;
+    margin-top: -13px;
+    
+    
+}
+
+#l_key{
+    width: 60px;
+    height: 450px;
+   
+}
+
+#selected_recipe_container div{
+    display: none;
+    width: 240px;
+    height: 560px;
+    border-radius: 25px;
+    background-color: #47bb8b;
+    border: 10px solid black;
+   
+}
+
+#selected_recipe_container > div.visible {
+    display: block;
+}
+
+#selected_recipe_container div > img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+#selected_recipe_container div > h2{
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#selected_recipe_container div > p{
+    font-family: 'Fira Code', monospace;
+    font-size:20px;
+    padding-right: 10px;
+}
+
+#prev_btn, #next_btn{
+    height: 60px;
+    margin-top: 220px;
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+    border: 5px solid black;
+
+}
+#prev_btn{
+    margin-right: 20px;
+}
+#next_btn{
+    margin-left: 20px;
+}
+
+#back_btn{
+    margin-top: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    border: 5px solid black;
+}
+
+#back_btn a{
+    text-decoration: none;
+    color: black;
 }

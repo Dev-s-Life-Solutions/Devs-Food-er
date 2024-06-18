@@ -79,7 +79,38 @@ if (selected_recipe_container) {
         console.log(cardRecipe);
         selected_recipe_container.appendChild(cardRecipe);
     });
-}
+
+    const items = Array.from(selected_recipe_container.children);
+    const itemsPerPage = 3;
+    let currentPage = 0;
+
+    function updateVisibility() {
+        items.forEach((item, index) => {
+            item.classList.remove('visible');
+            if (index >= currentPage * itemsPerPage && index < (currentPage + 1) * itemsPerPage) {
+                item.classList.add('visible');
+            }
+        });
+    }
+
+    document.getElementById('prev_btn').addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updateVisibility();
+        }
+    });
+
+    document.getElementById('next_btn').addEventListener('click', () => {
+        if ((currentPage + 1) * itemsPerPage < items.length) {
+            currentPage++;
+            updateVisibility();
+        }
+    });
+
+    updateVisibility(); 
+};
+
+
 
 const full_recipe_container = document.getElementById('full_recipe_container');
 if (full_recipe_container) {
