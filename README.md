@@ -92,4 +92,20 @@ Angel Paz
 
 ## Modelo de Dominio
 
-![Modelado](./img/modelado.png)
+1. Ingredient:
+
+* id
+* name
+* img
+
+2. Recipe
+
+* name
+* servings
+* img
+* ingredients
+* ingredientsDetailed
+* steps
+* difficulty
+* cost
+* preview
