@@ -10,7 +10,7 @@ Ingredient.prototype.render = function () {
     ingredientElement.innerHTML = `
         <input type="checkbox" id="${this.id}" name="ingredient" value="${this.id}">
         <label for="${this.id}">
-            <img src="./img/"${this.img}" alt="${this.name}">
+            <img src="${this.img}" alt="${this.name}">
             <span>${this.name}</span>
         </label>
     `;
