@@ -150,25 +150,72 @@ main #ingredients {
 
 }
 
+#ing_elements{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
  #ingredients #const, #hero_h2, #iqual, .corch{
     font-family: 'Fira Code', monospace;
 } 
 
 #ingredients #const{
     color: #608dac;
-    font-size: 70px;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
 #ingredients #hero_h2{
     color: #4eb4cb;
-    font-size: 70px;
+    font-size: 50px;
+    margin-top: 19px;
+    margin-left: 15px;
+    margin-bottom: 30px;
 }
 
 #ingredients #iqual{
     color: white;
-    font-size: 70px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#list_ingredients{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center; 
 }
 
 .corch{
     color: yellow;
+    font-size: 250px;
+}
+
+#ingredients_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ingredient {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px; 
+    display : flex;
+    justify-content: space-around;
+}
+
+.ingredient img{
+    width: 50px;
+    height: auto;
+    margin-inline: 10px;
+}
+
+.ingredient span {
+    font-size: 20px; 
+    color: #63afea;
+    font-family: 'Fira Code', monospace;
 }

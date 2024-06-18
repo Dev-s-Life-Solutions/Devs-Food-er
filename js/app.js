@@ -8,20 +8,20 @@ function AppState() {
 }
 AppState.prototype.instantiateIngredients = function () {
     this.allIngredients = [
-        new Ingredient('atun', 'Atún', '/img/atun.jpg'),
-        new Ingredient('cebolla', 'Cebolla', '..\img\cebolla.jpg'),
-        new Ingredient('pan', 'Pan', '..\img\pan.jpg'),
-        new Ingredient('leche', 'Leche', '..\img\leche.jpg'),
-        new Ingredient('papa', 'Papa', '..\img\papa.jpg'),
-        new Ingredient('queso_parmesano', 'Queso Parmesano', '..\img\queso_parmesano.jpg'),
-        new Ingredient('comino', 'Comino', '..\img\comino.jpg'),
-        new Ingredient('oregano', 'Orégano', '..\img\oregano.jpg'),
-        new Ingredient('pimienta', 'Pimienta', '..\img\pimienta.jpg'),
-        new Ingredient('aceituna', 'Aceituna', '..\img\aceituna.jpg'),
-        new Ingredient('huevo', 'Huevo', '..\img\huevo.jpg'),
-        new Ingredient('aceite', 'Aceite', '..\img\aceite.jpg'),
-        new Ingredient('cerdo', 'Cerdo', '..\img\cerdo.jpg'),
-        new Ingredient('pimenton', 'Pimenton', '..\img\pimenton.jpg'),
+        new Ingredient('atun', 'Atún', '/img/atun.png'),
+        new Ingredient('cebolla', 'Cebolla', '/img/cebolla.png'),
+        new Ingredient('pan', 'Pan', '/img/pan.png'),
+        new Ingredient('leche', 'Leche', '/img/leche.png'),
+        new Ingredient('papa', 'Papa', '/img/papa.png'),
+        new Ingredient('queso_parmesano', 'Queso Parmesano', '/img/parmesano.png'),
+        new Ingredient('comino', 'Comino', '/img/comino.png'),
+        new Ingredient('oregano', 'Orégano', '/img/oregano.png'),
+        new Ingredient('pimienta', 'Pimienta', '/img/pimienta.png'),
+        new Ingredient('aceituna', 'Aceituna', '/img/aceituna.png'),
+        new Ingredient('huevo', 'Huevo', '/img/huevo.png'),
+        new Ingredient('aceite', 'Aceite', '/img/aceite.png'),
+        new Ingredient('cerdo', 'Cerdo', '/img/cerdo.png'),
+        new Ingredient('pimenton', 'Pimenton', '/img/pimenton.png'),
 
     ];
 }
