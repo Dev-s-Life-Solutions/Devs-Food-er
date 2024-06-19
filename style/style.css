@@ -480,3 +480,81 @@ footer{
     font-size: 30px;
     border: 5px solid black;
 }
+#history{
+    background-color: #012434;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}
+
+#h1_h{
+    display: flex;
+}
+#const_h, #hero_h1_h, #iqual_h{
+    font-family: 'Fira Code', monospace;
+    font-size: 60px;
+}
+#const_h{
+    color: #608dac;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+#iqual_h{
+    color: yellow;
+}
+
+.date_container{
+    background-color: #1f1f1f;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.date_container > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 750px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: #47bb8b;
+    border: 10px solid black;
+    margin-bottom: 20px;
+   
+}
+.date_container div > img{
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 30px;
+    
+
+} 
+.date_container  h3{
+    font-family: 'Fira Code', monospace;
+    font-size:40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.date_container div > h2{
+    font-family: 'Fira Code', monospace;
+    font-size:35px;
+    padding-top: 20px;
+}
+
+.date_container div > p{
+    font-family: 'Fira Code', monospace;
+    font-size:30px;
+    margin-top: -150px;
+    padding-left: 10px;
+    padding-right: 15px;
+}

@@ -5,6 +5,7 @@ function AppState() {
     this.allRecipes = [];
     this.selectedIngredients = [];
     this.filteredRecipes = [];
+    this.cookedRecipes = [];
 }
 AppState.prototype.instantiateIngredients = function () {
     this.allIngredients = [
@@ -25,8 +26,8 @@ AppState.prototype.instantiateIngredients = function () {
 
     ];
 }
-AppState.prototype.instantiateRecipes= function(){
-    this.allRecipes = [recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11];
+AppState.prototype.instantiateRecipes = function () {
+    this.allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11];
 }
 
 const app = new AppState();
@@ -107,7 +108,7 @@ if (selected_recipe_container) {
         }
     });
 
-    updateVisibility(); 
+    updateVisibility();
 };
 
 
@@ -116,11 +117,21 @@ const full_recipe_container = document.getElementById('full_recipe_container');
 if (full_recipe_container) {
     const lsRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
     if (lsRecipe) {
-       const selectedRecipe = new Recipe(lsRecipe.name, lsRecipe.servings, lsRecipe.img, lsRecipe.ingredients, lsRecipe.ingredientsDetailed, lsRecipe.steps, lsRecipe.difficulty, lsRecipe.cost, lsRecipe.preview);
-       full_recipe_container.appendChild(selectedRecipe.renderPage());
-    } else 
+        const selectedRecipe = new Recipe('', lsRecipe.name, lsRecipe.servings, lsRecipe.img, lsRecipe.ingredients, lsRecipe.ingredientsDetailed, lsRecipe.steps, lsRecipe.difficulty, lsRecipe.cost, lsRecipe.preview);
+        full_recipe_container.appendChild(selectedRecipe.renderPage());
+        document.getElementById('cooked_recipe').addEventListener('click', function () {
+            let date = new Date();
+            let strdate = date.toLocaleString().split(',')[0];
+            const cookedRecipe = new CookedRecipe(selectedRecipe, strdate);
+            let recipeHistory = JSON.parse(localStorage.getItem('cookedRecipes')) || [];
+            recipeHistory.push(cookedRecipe);
+            localStorage.setItem('cookedRecipes', JSON.stringify(recipeHistory));
+            alert('¡Felicidades!, haz seleccionado esta receta para cocinar y aparecerá en el historial para futuras consultas');
+
+        })
+    } else
         container.textContent = 'No se encontró la receta seleccionada.';
-    }
+}
 
 
 const container_all_recipes = document.getElementById('container_all_recipes');
@@ -132,7 +143,32 @@ if (container_all_recipes) {
     });
 }
 
+const container_history = document.getElementById('container_history');
+if (container_history) {
+    const recipeHistory = JSON.parse(localStorage.getItem('cookedRecipes')) || [];
+    const recipesByDate = {};
 
+    recipeHistory.forEach(cookedRecipe => {
+        const cookedDate = cookedRecipe.date;
+        if (!recipesByDate[cookedDate]) {
+            recipesByDate[cookedDate] = [];
+        }
+        recipesByDate[cookedDate].push(new Recipe(cookedRecipe.recipe));
 
+        Object.keys(recipesByDate).forEach(date => {
+            const dateDiv = document.createElement('div');
+            dateDiv.classList.add('date_container');
 
+            const dateH3 = document.createElement('h3');
+            dateH3.textContent = 'Fecha de cocción : '+ date;
+            dateDiv.appendChild(dateH3);
 
+            recipesByDate[date].forEach(recipe => {
+                const card = recipe.renderCard();
+                dateDiv.appendChild(card);
+            });
+            container_history.appendChild(dateDiv);
+        });
+        console.log(recipesByDate);
+    });
+    }
