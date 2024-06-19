@@ -1,4 +1,16 @@
-function Recipe(name, servings, img, ingredients, ingredientsDetailed, steps, difficulty, cost, preview) {
+function Recipe(recipe='', name = '', servings = '', img = '', ingredients = '', ingredientsDetailed = '', steps = '', difficulty = '', cost = '', preview = '') {
+    if (recipe!=='' && name === '') {
+        this.name = recipe.name;
+        this.servings = recipe.servings;
+        this.img = recipe.img;
+        this.ingredients = recipe.ingredients;
+        this.ingredientsDetailed = recipe.ingredientsDetailed;
+        this.steps = recipe.steps;
+        this.difficulty = recipe.difficulty;
+        this.cost = recipe.cost;
+        this.preview = recipe.preview;
+        return;
+    }
     this.name = name;
     this.servings = servings;
     this.img = img;
@@ -9,6 +21,7 @@ function Recipe(name, servings, img, ingredients, ingredientsDetailed, steps, di
     this.cost = cost;
     this.preview = preview;
 }
+
 
 Recipe.prototype.renderCard = function () {
     const card = document.createElement('div');
@@ -30,7 +43,7 @@ Recipe.prototype.renderCard = function () {
     return card;
 }
 
-Recipe.prototype.renderPage = function(){
+Recipe.prototype.renderPage = function () {
     const recipeContainer = document.createElement('article');
     const recipeName = document.createElement('h2');
     const recipeServings = document.createElement('p');
@@ -112,6 +125,7 @@ Recipe.prototype.renderPage = function(){
 
 
 const recipe1 = new Recipe(
+    '',
     'Ají de atún',
     'Seis Porciones',
     'aji_atun.jpg',
@@ -123,6 +137,7 @@ const recipe1 = new Recipe(
     'Una deliciosa preparación a base de atún, pan y ají.'
 )
 const recipe2 = new Recipe(
+    '',
     'Ají de huevos',
     'Cuatro Porciones',
     'aji_huevos.jpg',
@@ -134,6 +149,7 @@ const recipe2 = new Recipe(
     'Una receta a abse de huevos y cerdo, con papitas sancochadas.'
 )
 const recipe3 = new Recipe(
+    '',
     'Ají verde relleno',
     'Seis Porciones',
     'aji_verde.jpg',
@@ -145,6 +161,7 @@ const recipe3 = new Recipe(
     'Ajíes rellenos de pollo y gratinado con parmesano.'
 )
 const recipe4 = new Recipe(
+    '',
     'Alcachofas rellenas',
     'Seis Porciones',
     'alcachofa_rellena.jpg',
@@ -156,6 +173,7 @@ const recipe4 = new Recipe(
     'El corazón de las alcachofas sancochadas con cangrejo y mayonesa.'
 )
 const recipe5 = new Recipe(
+    '',
     'Alcachofas rellenas con conchas',
     'Seis Porciones',
     'alcachofa_conchas.jpg',
@@ -166,12 +184,8 @@ const recipe5 = new Recipe(
     'Media',
     'Una deliciosa combinación de conchas marinas y el corazón de las alcachofas.'
 )
-// const recipes = [recipe1,recipe2,recipe3,recipe4,recipe5];
-
-
-
-
 const recipe6 = new Recipe(
+    '',
     'Alitas de pollo en escabeche',
     'Cuatro Porciones',
     'alitas_escabechadas.jpg',
@@ -183,6 +197,7 @@ const recipe6 = new Recipe(
     'Deliciosas alitas de pollo con la clásica sazón del escabeche'
 )
 const recipe7 = new Recipe(
+    '',
     'Alitas con tausí',
     'Seis Porciones',
     'alitas_tausi.jpg',
@@ -194,6 +209,7 @@ const recipe7 = new Recipe(
     'Unas alitas con sabor oriental que no te puedes perder'
 )
 const recipe8 = new Recipe(
+    '',
     'Anticuchos de corazón',
     'Cuatro Porciones',
     'anticucho_corazon.jpg',
@@ -205,6 +221,7 @@ const recipe8 = new Recipe(
     'La clásica receta tradicional de anticuchos, tan deliciosos como los de carretera'
 )
 const recipe9 = new Recipe(
+    '',
     'Anticuchos de pescado',
     'Cuatro Porciones',
     'anticucho_pescado.jpg',
@@ -216,6 +233,7 @@ const recipe9 = new Recipe(
     'Una versión más moderna de los clásicos anticuchos, pero con pescado'
 )
 const recipe10 = new Recipe(
+    '',
     'Arroz con huevo cremoso',
     'Cuatro Porciones',
     'arroz_huevo_cremoso.jpg',
@@ -227,6 +245,7 @@ const recipe10 = new Recipe(
     'Para los amantes de las torrejitas, ésta es su receta'
 )
 const recipe11 = new Recipe(
+    '',
     'Albóndigas de lentejas, culantro y tomate',
     'Cuatro Porciones',
     'albondigas_lentejas.jpg',
