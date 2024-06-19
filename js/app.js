@@ -157,10 +157,10 @@ if (container_history) {
 
         Object.keys(recipesByDate).forEach(date => {
             const dateDiv = document.createElement('div');
-            dateDiv.classList.add('date-container');
+            dateDiv.classList.add('date_container');
 
             const dateH3 = document.createElement('h3');
-            dateH3.textContent = date;
+            dateH3.textContent = 'Fecha de cocción : '+ date;
             dateDiv.appendChild(dateH3);
 
             recipesByDate[date].forEach(recipe => {
