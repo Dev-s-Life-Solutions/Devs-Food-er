@@ -154,21 +154,23 @@ if (container_history) {
             recipesByDate[cookedDate] = [];
         }
         recipesByDate[cookedDate].push(new Recipe(cookedRecipe.recipe));
-
-        Object.keys(recipesByDate).forEach(date => {
-            const dateDiv = document.createElement('div');
-            dateDiv.classList.add('date_container');
-
-            const dateH3 = document.createElement('h3');
-            dateH3.textContent = 'Fecha de cocción : '+ date;
-            dateDiv.appendChild(dateH3);
-
-            recipesByDate[date].forEach(recipe => {
-                const card = recipe.renderCard();
-                dateDiv.appendChild(card);
-            });
-            container_history.appendChild(dateDiv);
-        });
-        console.log(recipesByDate);
     });
-    }
+
+    Object.keys(recipesByDate).forEach(date => {
+        const dateDiv = document.createElement('div');
+        dateDiv.classList.add('date_container');
+
+        const dateH3 = document.createElement('h3');
+        dateH3.textContent = 'Fecha de cocción : ' + date;
+        dateDiv.appendChild(dateH3);
+
+        recipesByDate[date].forEach(recipe => {
+            const card = recipe.renderCard();
+            dateDiv.appendChild(card);
+        });
+
+        container_history.appendChild(dateDiv);
+    });
+
+    console.log(recipesByDate);
+}

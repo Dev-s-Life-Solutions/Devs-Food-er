@@ -93,37 +93,6 @@ Recipe.prototype.renderPage = function () {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-// function renderRecipe (recipe){
-//     const card = document.createElement('div');
-//     const h2 = document.createElement('h2');
-//     const img = document.createElement("img");
-//     const prev = document.createElement('p');
-//     h2.textContent = recipe.name;
-//     img.src = 'img/' + recipe.img;
-//     img.alt = recipe.name;
-//     prev.textContent = recipe.preview;
-//     card.appendChild(h2);
-//     card.appendChild(img);
-//     card.appendChild(prev);
-//     card.addEventListener('click', () => {
-//         localStorage.setItem('selectedRecipe', JSON.stringify(recipe));
-//         window.location.href = 'recipe.html';
-//     });
-//     console.log(card);
-//     return card;
-// }
-
-
 const recipe1 = new Recipe(
     '',
     'Ají de atún',
@@ -146,7 +115,7 @@ const recipe2 = new Recipe(
     ['1. Calentar el aceite y freír hasta dorar la carne de cerdo cortada en trozos pequeños y previamente cocida.', '2. Incorporar la cebolla, el pimentón, la sal, la pimienta y el ají.', '3. Cocinar unos minutos y añadir los huevos mezclados.', 'Dejar que cuaje y servir sobre las papas sancochadas.'],
     'Fácil',
     'Medio',
-    'Una receta a abse de huevos y cerdo, con papitas sancochadas.'
+    'Una receta a base de huevos y cerdo, con papitas sancochadas.'
 )
 const recipe3 = new Recipe(
     '',
