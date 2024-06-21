@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 80px;
 
 }
 
@@ -15,20 +16,29 @@ main {
 
 header .nav_bar {
 
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
-
+    background-color: #012434;
+    z-index: 1000;
 }
 
 header .nav_bar a {
     font-family: 'Teko';
     font-size: 50px;
     text-decoration: none;
-    color: black;
+    color: #42a1e8;
 }
 
+header .nav_bar a:hover{
+    color: yellow;
+
+}
 
 main .intro {
     background-image: url(../img/madera.jpg);
@@ -220,12 +230,18 @@ main #ingredients,
     padding-right: 100px;
 }
 
+
 .ingredient {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
+}
+
+.ingredient:hover{
+    border: 1px solid red;
+    cursor: pointer;
 }
 
 .ingredient img {
@@ -240,6 +256,10 @@ main #ingredients,
     font-family: 'Fira Code', monospace;
 }
 
+.ingredient img:hover,.ingredient span:hover{
+    cursor: pointer;
+}
+
 #select_ingredients_btn {
     margin-top: 50px;
     font-family: 'Teko';
@@ -249,10 +269,16 @@ main #ingredients,
     border-radius: 25px;
 }
 
+#select_ingredients_btn:hover{
+    background-color: black;
+    border: 5px solid #47bb8b;
+    color: #47bb8b;
+    cursor: pointer;
+}
+
 footer {
     margin-top: 100px;
 }
-
 
 #selection_hero p,
 h1,
@@ -308,10 +334,19 @@ h1,
     display: block;
 }
 
+#selected_recipe_container>div.visible:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 10px solid #47bb8b;
+    color: #47bb8b;
+
+}
+
 #selected_recipe_container div>img {
     width: 200px;
     height: 200px;
     margin-top: 25px;
+    border-radius: 25px;
 }
 
 #selected_recipe_container div>h2 {
@@ -337,17 +372,32 @@ h1,
 
 #prev_btn {
     margin-right: 20px;
+    margin-left: -40px;
 }
 
 #next_btn {
     margin-left: 20px;
+    margin-right: -40px;
 }
 
 #back_btn {
     margin-top: 20px;
     font-family: 'Fira Code', monospace;
     font-size: 30px;
+    color: black;
     border: 5px solid black;
+}
+#prev_btn:hover, 
+#next_btn:hover, 
+#back_btn:hover{
+    background-color: black;
+    border: 5px solid #47bb8b;
+    cursor: pointer;
+    color: #47bb8b;
+}
+
+#back_btn a:hover{
+    color: #47bb8b;
 }
 
 #corch_l_select, #corch_r_select{
@@ -420,10 +470,18 @@ h1,
     border: 10px solid black;
 }
 
+#container_all_recipes div:hover {
+    background-color: black;
+    border: 10px solid #47bb8b;
+    color: #47bb8b;
+    cursor: pointer;
+}
+
 #container_all_recipes div>img {
     width: 200px;
     height: 200px;
     margin-top: 25px;
+    border-radius: 25px;
 }
 
 #container_all_recipes div>h2 {
@@ -494,10 +552,11 @@ h1,
 }
 
 #full_recipe_container article>img {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     margin-top: 25px;
-    padding-left: 200px;
+    margin-left:250px;
+    border-radius: 25px;
 
 }
 
@@ -540,6 +599,13 @@ ul {
     border: 5px solid black;
 }
 
+#cooked_recipe:hover{
+    background-color: black;
+    border: 5px solid #47bb8b;
+    cursor: pointer;
+    color: #47bb8b;
+}
+
 #history {
     background-color: #012434;
     display: flex;
@@ -560,7 +626,7 @@ ul {
 #hero_h1_h,
 #iqual_h {
     font-family: 'Fira Code', monospace;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #const_h {
@@ -599,8 +665,9 @@ ul {
 .date_container div>img {
     width: 300px;
     height: 200px;
-    padding-top: 20px;
-    padding-left: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
 
 
 }
