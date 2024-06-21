@@ -657,9 +657,16 @@ ul {
     height: 250px;
     border-radius: 25px;
     background-color: #47bb8b;
-    border: 10px solid black;
+    border: 5px solid black;
     margin-bottom: 20px;
 
+}
+
+.date_container >div:hover{
+    background-color: black;
+    border: 5px solid #47bb8b;
+    cursor: pointer;
+    color: #47bb8b;
 }
 
 .date_container div>img {
