@@ -1,5 +1,5 @@
-function Recipe(recipe='', name = '', servings = '', img = '', ingredients = '', ingredientsDetailed = '', steps = '', difficulty = '', cost = '', preview = '') {
-    if (recipe!=='' && name === '') {
+function Recipe(recipe = '', name = '', servings = '', img = '', ingredients = '', ingredientsDetailed = '', steps = '', difficulty = '', cost = '', preview = '') {
+    if (recipe !== '' && name === '') {
         this.name = recipe.name;
         this.servings = recipe.servings;
         this.img = recipe.img;
@@ -225,120 +225,471 @@ const recipe11 = new Recipe(
     'Bajo',
     'Deliciosa receta para no botar las lentejitas del dia anterior'
 )
-// const recipe12 = new Recipe(
-
-// )
-// const recipe13 = new Recipe(
-
-// )
+const recipe12 = new Recipe(
+    '',
+    'Brochetas de Lomo Teriyaki',
+    'Seis Porciones',
+    'brocheta_lomo_teriyaki.jpg',
+    ['res', 'limon', 'azucar', 'sillao', 'aceite', 'kion', 'ajo', 'piña', 'pimiento'],
+    ['1 kilo de carne de res', '2 cucharadas de jugo de limón', '1/4 de taza de azúcar rubia', '1/4 de taza de sillao', '1 cucharada de aceite', '1 cucharada de kión en polvo', '2 dientes de ajo picados', 'Trozos de piña', '1 pimiento grande cortado en cuadrados de 2 cm.'],
+    ['1. Cortar la carne en trozos de 2 cm.', '2. Colocar en un recipiente el azúcar, el jugo de limón, el sillao, el aceite, el kión, los ajos y la carne. Dejar macerar por 3 horas dándole vueltas a la carne.', '3. En una sartén bien caliente freír los trozos de carne.', '4. Luego ensartar los trozos de carne en palitos alternando con la piña y los pimientos.', '5. Poner al horno por 10 minutos para que dore la piña.'],
+    'Medio',
+    'Medio',
+    'Ricas brochetas que fusionan la cocina peruana y la oriental.'
+)
+const recipe13 = new Recipe(
+    '',
+    'Brochetas de pollo al kion y salsa agridulce',
+    'Cuatro Porciones',
+    'brocheta_pollo_kion_agridulce.jpg',
+    ['pollo', 'sillao', 'ajo', 'cebolla', 'azucar', 'aceite', 'vino_blanco', 'kion', 'sal'],
+    ['500 g de pechugas de pollo', '3 cdas. de sillao', '1 diente de ajo', '3-4 cebollas', '3 cdas. de azúcar', '2 cdas. de aceite', '3 cdas. de vinagre de vino blanco', 'kion fresco rallado o seco en polvo', 'sal al gusto'],
+    ['1. En una olla mezclar 1 cda. de maicena con 1 taza de caldo, 3 cdas. de puré de tomate y ¼ de taza de vinagre.', '2. Agregar 5 cdas. de azúcar y una pizca de sal y ají al gusto.', '3. Cocer la salsa a fuego moderado, sin dejar de mezclar, hasta que espese.', '4. Dejar enfriar removiendo de vez en cuando.', 'También quedan muy bien las brochetas de pollo con verduras o las de cerdo con tocino, piña y manzana, acompañadas con una salsa al gusto.', 'Salsa agridulce:', '1. En una olla mezclar 1 cda. de maicena con 1 taza de caldo, 3 cdas. de puré de tomate y ¼ de taza de vinagre.', '2. Agregar 5 cdas. de azúcar y una pizca de sal y ají al gusto.', '3. Cocer la salsa a fuego moderado, sin dejar de mezclar, hasta que espese.', '4. Dejar enfriar removiendo de vez en cuando.', 'También quedan muy bien las brochetas de pollo con verduras o las de cerdo con tocino, piña y manzana, acompañadas con una salsa al gusto.'],
+    'Difícil',
+    'Medio',
+    'De las recetas mas ricas de los restaurantes orientales a tu mesa'
+)
 // const recipe14 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe15 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe16 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe17 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe18 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe19 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe20 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe21 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe22 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe23 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe24 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe25 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe26 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe27 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe28 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe29 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe30 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe31 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe32 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe33 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe34 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe35 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe36 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe37 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe38 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe39 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe40 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe41 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe42 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe43 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe44 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe45 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe46 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe47 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe48 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe49 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
 // const recipe50 = new Recipe(
-
+//     '',
+//     '',
+//     '',
+//     '.jpg',
+//     [],
+//     [],
+//     [],
+//     '',
+//     '',
+//     ''
 // )
