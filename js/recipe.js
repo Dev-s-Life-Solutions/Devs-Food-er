@@ -43,7 +43,8 @@ Recipe.prototype.renderCard = function () {
     return card;
 }
 
-Recipe.prototype.renderPage = function () {
+Recipe.prototype.renderPage = function (selectedIngredients) {
+    console.log(selectedIngredients);
     const recipeContainer = document.createElement('article');
     const recipeName = document.createElement('h2');
     const recipeServings = document.createElement('p');
@@ -71,9 +72,14 @@ Recipe.prototype.renderPage = function () {
 
     recipeContainer.appendChild(h3Ingrt);
     recipeContainer.appendChild(recipeListIngrt);
-    this.ingredientsDetailed.forEach(ingredientsDetailed => {
+    let diff_ingredients = this.ingredients.filter(ingredient => !selectedIngredients.includes(ingredient));
+    this.ingredientsDetailed.forEach((ingredientDetailed, index) => {
         let item = document.createElement('li');
-        item.textContent = ingredientsDetailed;
+
+        if (diff_ingredients.includes(this.ingredients[index])) {
+            item.classList.add('missing');
+        }
+        item.textContent = ingredientDetailed;
         recipeListIngrt.appendChild(item);
     });
 

@@ -51,8 +51,6 @@ AppState.prototype.instantiateRecipes = function () {
 const app = new AppState();
 app.instantiateIngredients();
 app.instantiateRecipes();
-console.log(app.allIngredients);
-console.log(app.allRecipes);
 
 const select_ingredients_button = document.getElementById('select_ingredients_btn');
 const selected_recipe_container = document.getElementById('selected_recipe_container');
@@ -71,11 +69,56 @@ function filterRecipesByIngredients(selectedIngredients) {
     );
 }
 
+function getAppFromLocalStorage() {
+    const ls = localStorage.getItem('app') || null;
+    if (!ls) return null;
+    return JSON.parse(ls);
+}
+
+function addIngredientsToLocalStorage(ingredient) {
+    const lsApp = getAppFromLocalStorage();
+    if (lsApp) {
+        if (lsApp.selectedIngredients && lsApp.selectedIngredients.length) {
+            app.selectedIngredients = lsApp.selectedIngredients;
+            if (!app.selectedIngredients.find(ing => ing === ingredient)) {
+                app.selectedIngredients.push(ingredient);
+            }
+        } else {
+            app.selectedIngredients.push(ingredient);
+        }
+    }
+    localStorage.setItem('app', JSON.stringify(app));    
+}
+
+function removeIngredientsFromLocalStorage(ingredient) {
+    const lsApp = getAppFromLocalStorage();
+    if (lsApp) {
+        if (lsApp.selectedIngredients && lsApp.selectedIngredients.length) {
+            app.selectedIngredients = lsApp.selectedIngredients;
+            const index = app.selectedIngredients.indexOf(ingredient);
+            if (index > -1) { // only splice array when item is found
+                app.selectedIngredients.splice(index, 1); // 2nd parameter means remove one item only
+            }
+        }
+    }
+    localStorage.setItem('app', JSON.stringify(app));    
+}
+
+function findIngredientInLocalStorage(ingredient) {
+    const lsApp = getAppFromLocalStorage();
+    if (lsApp && lsApp.selectedIngredients && lsApp.selectedIngredients.length) {
+        app.selectedIngredients = lsApp.selectedIngredients;
+        const index = app.selectedIngredients.indexOf(ingredient);
+        return (index > -1);
+    }
+    return false;
+}
+
 if (select_ingredients_button) {
     const container = document.getElementById('ingredients_container');
     container.innerHTML = '';
     app.allIngredients.forEach(ingredient => {
-        container.appendChild(ingredient.render());
+        container.appendChild(ingredient.render(findIngredientInLocalStorage, addIngredientsToLocalStorage, removeIngredientsFromLocalStorage));
     });
     select_ingredients_button.addEventListener('click', function () {
         app.selectedIngredients = getSelectedIngredients();
@@ -90,7 +133,9 @@ if (select_ingredients_button) {
 
 if (selected_recipe_container) {
     const lsApp = JSON.parse(localStorage.getItem('app'));
-    app.filteredRecipes = filterRecipesByIngredients(lsApp.selectedIngredients);
+    app.selectedIngredients = lsApp.selectedIngredients;
+    app.filteredRecipes = filterRecipesByIngredients(app.selectedIngredients);
+    console.log(lsApp);
     console.log('Filtered Recipes:', app.filteredRecipes);
 
     app.filteredRecipes.forEach(recipe => {
@@ -133,10 +178,14 @@ if (selected_recipe_container) {
 
 const full_recipe_container = document.getElementById('full_recipe_container');
 if (full_recipe_container) {
+    const lsApp = JSON.parse(localStorage.getItem('app'));
+    app.selectedIngredients = lsApp.selectedIngredients;
+    app.filteredRecipes = filterRecipesByIngredients(app.selectedIngredients);
+    console.log(lsApp);
     const lsRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
     if (lsRecipe) {
         const selectedRecipe = new Recipe('', lsRecipe.name, lsRecipe.servings, lsRecipe.img, lsRecipe.ingredients, lsRecipe.ingredientsDetailed, lsRecipe.steps, lsRecipe.difficulty, lsRecipe.cost, lsRecipe.preview);
-        full_recipe_container.appendChild(selectedRecipe.renderPage());
+        full_recipe_container.appendChild(selectedRecipe.renderPage(app.selectedIngredients));
         document.getElementById('cooked_recipe').addEventListener('click', function () {
             let date = new Date();
             let strdate = date.toLocaleString().split(',')[0];

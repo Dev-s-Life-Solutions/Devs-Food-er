@@ -244,6 +244,11 @@ main #ingredients,
     cursor: pointer;
 }
 
+.ingredient.checked {
+    background-color: white;
+    border: 2px;
+}
+
 .ingredient img {
     width: 50px;
     height: auto;
@@ -256,9 +261,19 @@ main #ingredients,
     font-family: 'Fira Code', monospace;
 }
 
-.ingredient img:hover,.ingredient span:hover{
+.ingredient > *{
     cursor: pointer;
 }
+
+.ingredient.checked img {
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.ingredient.checked span{
+    font-weight: bold;
+    color: #47bb8b;;
+}
+
 
 #select_ingredients_btn {
     margin-top: 50px;
@@ -586,6 +601,10 @@ ul {
 #full_recipe_container article>ul>li {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#full_recipe_container article>ul>li.missing {
+    color: red;
 }
 
 #full_recipe_container article>ol>li {
