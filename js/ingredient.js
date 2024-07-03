@@ -19,4 +19,3 @@ Ingredient.prototype.render = function () {
 
 
 
-// atun cebolla pan leche papa queso_parmesano comino oregano pimienta aceituna huevo aceite cerdo pimenton aji_molido aji pollo arveja choclo tomate perejil culantro margarina harina nuez_moscada alcachofa pulpa_cangrejo mayonesa concha limon 

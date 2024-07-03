@@ -23,11 +23,29 @@ AppState.prototype.instantiateIngredients = function () {
         new Ingredient('aceite', 'Aceite', './img/aceite.png'),
         new Ingredient('cerdo', 'Cerdo', './img/cerdo.png'),
         new Ingredient('pimenton', 'Pimenton', './img/pimenton.png'),
+        new Ingredient('aji_molido', 'Ají Molido', './img/aji_molido.png'),
+        new Ingredient('aji', 'Ají', './img/aji.png'),
+        new Ingredient('pollo', 'Pollo', './img/pollo.png'),
+        new Ingredient('arveja', 'Arveja', './img/arveja.png'),
+        new Ingredient('choclo', 'Choclo', './img/choclo.png'),
+        new Ingredient('tomate', 'Tomate', './img/tomate.png'),
+        new Ingredient('perejil', 'Perejil', './img/perejil.png'),
+        new Ingredient('culantro', 'Culantro', './img/culantro.png'),
+        new Ingredient('margarina', 'Margarina', './img/margarina.png'),
+        new Ingredient('harina', 'Harina', './img/harina.png'),
+        new Ingredient('nuez_moscada', 'Nuez Moscada', './img/nuez_moscada.png'),
+        new Ingredient('alcachofa', 'Alcachofa', './img/alcachofa.png'),
+        new Ingredient('pulpa_cangrejo', 'Pulpa de Cangrejo', './img/pulpa_cangrejo.png'),
+        new Ingredient('mayonesa', 'Mayonesa', './img/mayonesa.png'),
+        new Ingredient('concha', 'Concha', './img/concha.png'),
+        new Ingredient('limon', 'Limon', './img/limon.png'),
+
+
 
     ];
 }
 AppState.prototype.instantiateRecipes = function () {
-    this.allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11];
+    this.allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13];
 }
 
 const app = new AppState();
