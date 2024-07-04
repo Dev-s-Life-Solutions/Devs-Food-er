@@ -54,6 +54,7 @@ app.instantiateRecipes();
 
 const select_ingredients_button = document.getElementById('select_ingredients_btn');
 const selected_recipe_container = document.getElementById('selected_recipe_container');
+const clear_selected_ing = document.getElementById('clear_select_btn');
 
 let filteredRecipes;
 
@@ -87,7 +88,7 @@ function addIngredientsToLocalStorage(ingredient) {
             app.selectedIngredients.push(ingredient);
         }
     }
-    localStorage.setItem('app', JSON.stringify(app));    
+    localStorage.setItem('app', JSON.stringify(app));
 }
 
 function removeIngredientsFromLocalStorage(ingredient) {
@@ -101,8 +102,27 @@ function removeIngredientsFromLocalStorage(ingredient) {
             }
         }
     }
-    localStorage.setItem('app', JSON.stringify(app));    
+    localStorage.setItem('app', JSON.stringify(app));
 }
+
+
+if (clear_selected_ing) {
+    clear_selected_ing.addEventListener('click', function () {
+        const lsApp = getAppFromLocalStorage();
+        if (lsApp) {
+            app.selectedIngredients = [];
+            localStorage.setItem('app', JSON.stringify(app));
+            const ingredientElements = document.querySelectorAll('.ingredient');
+            ingredientElements.forEach(function (ingredientElement) {
+                const checkbox = ingredientElement.querySelector('input[type="checkbox"]');
+                checkbox.checked = false;
+                ingredientElement.classList.remove('checked');
+            });
+        }
+    });
+}
+
+
 
 function findIngredientInLocalStorage(ingredient) {
     const lsApp = getAppFromLocalStorage();
