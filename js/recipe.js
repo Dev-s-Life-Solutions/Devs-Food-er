@@ -28,10 +28,12 @@ Recipe.prototype.renderCard = function () {
     const h2 = document.createElement('h2');
     const img = document.createElement("img");
     const prev = document.createElement('p');
+
     h2.textContent = this.name;
     img.src = 'img/' + this.img;
     img.alt = this.name;
     prev.textContent = this.preview;
+    
     card.appendChild(h2);
     card.appendChild(img);
     card.appendChild(prev);
