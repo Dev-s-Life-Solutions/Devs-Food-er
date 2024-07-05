@@ -105,6 +105,16 @@ function removeIngredientsFromLocalStorage(ingredient) {
     localStorage.setItem('app', JSON.stringify(app));
 }
 
+function missingIngredients() {
+    const lsApp = getAppFromLocalStorage();
+    if (lsApp && lsApp.selectedIngredients) {
+        const missingIngredientsInCard = lsApp.selectedIngredients.length;
+        return missingIngredientsInCard;
+    } else {
+        return 0;
+    }
+}
+
 
 if (clear_selected_ing) {
     clear_selected_ing.addEventListener('click', function () {
