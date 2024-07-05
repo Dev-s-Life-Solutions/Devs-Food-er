@@ -22,10 +22,12 @@ function Recipe(recipe = '', name = '', servings = '', img = '', ingredients = '
     this.preview = preview;
 }
 
+Recipe.prototype.missingIngredients = function (selectedIngredients) {
+    return this.ingredients.filter(ingredient => !selectedIngredients.includes(ingredient));
+}
 
-Recipe.prototype.renderCard = function () {
-    const missingIngredientsCount = missingIngredients(); 
-    const missingIngredientsInCard = this.ingredients.length - missingIngredientsCount;
+
+Recipe.prototype.renderCard = function (selectedIngredients) {
     const card = document.createElement('div');
     const h2 = document.createElement('h2');
     const img = document.createElement("img");
@@ -38,7 +40,7 @@ Recipe.prototype.renderCard = function () {
     img.alt = this.name;
     prev.textContent = this.preview;
 
-    missing.textContent = 'Te faltan ' + missingIngredientsInCard + ' de ' + this.ingredients.length + ' ingredientes.';
+    missing.textContent = 'Te faltan ' + this.missingIngredients(selectedIngredients).length + ' de ' + this.ingredients.length + ' ingredientes.';
 
     card.appendChild(h2);
     card.appendChild(img);
@@ -81,7 +83,7 @@ Recipe.prototype.renderPage = function (selectedIngredients) {
 
     recipeContainer.appendChild(h3Ingrt);
     recipeContainer.appendChild(recipeListIngrt);
-    let diff_ingredients = this.ingredients.filter(ingredient => !selectedIngredients.includes(ingredient));
+    let diff_ingredients = this.missingIngredients(selectedIngredients);
     this.ingredientsDetailed.forEach((ingredientDetailed, index) => {
         let item = document.createElement('li');
 

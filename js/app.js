@@ -169,7 +169,7 @@ if (selected_recipe_container) {
     console.log('Filtered Recipes:', app.filteredRecipes);
 
     app.filteredRecipes.forEach(recipe => {
-        const cardRecipe = recipe.renderCard();
+        const cardRecipe = recipe.renderCard(app.selectedIngredients);
         console.log(cardRecipe);
         selected_recipe_container.appendChild(cardRecipe);
     });
@@ -235,7 +235,7 @@ const container_all_recipes = document.getElementById('container_all_recipes');
 if (container_all_recipes) {
 
     app.allRecipes.forEach(recipe => {
-        const card = recipe.renderCard();
+        const card = recipe.renderCard(app.selectedIngredients);
         container_all_recipes.appendChild(card);
     });
 }
@@ -262,7 +262,7 @@ if (container_history) {
         dateDiv.appendChild(dateH3);
 
         recipesByDate[date].forEach(recipe => {
-            const card = recipe.renderCard();
+            const card = recipe.renderCard(app.selectedIngredients);
             dateDiv.appendChild(card);
         });
 
