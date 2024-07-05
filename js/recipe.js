@@ -24,17 +24,26 @@ function Recipe(recipe = '', name = '', servings = '', img = '', ingredients = '
 
 
 Recipe.prototype.renderCard = function () {
+    const missingIngredientsCount = missingIngredients(); 
+    const missingIngredientsInCard = this.ingredients.length - missingIngredientsCount;
     const card = document.createElement('div');
     const h2 = document.createElement('h2');
     const img = document.createElement("img");
     const prev = document.createElement('p');
+
+    const missing = document.createElement('p');
+
     h2.textContent = this.name;
     img.src = 'img/' + this.img;
     img.alt = this.name;
     prev.textContent = this.preview;
+
+    missing.textContent = 'Te faltan ' + missingIngredientsInCard + ' de ' + this.ingredients.length + ' ingredientes.';
+
     card.appendChild(h2);
     card.appendChild(img);
     card.appendChild(prev);
+    card.appendChild(missing);
     card.addEventListener('click', () => {
         localStorage.setItem('selectedRecipe', JSON.stringify(this));
         window.location.href = 'recipe.html';
