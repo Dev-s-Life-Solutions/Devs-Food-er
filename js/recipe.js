@@ -266,78 +266,91 @@ const recipe13 = new Recipe(
     'Medio',
     'De las recetas mas ricas de los restaurantes orientales a tu mesa'
 )
-// const recipe14 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe15 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe16 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe17 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe18 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe19 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
+const recipe14 = new Recipe(
+    '',
+    'Carpaccio de lomo',
+    'Cuatro Porciones',
+    'Carpaccio_de_lomo.jpg',
+    ['res','aceite','vinagre','mostaza','limon','alcaparras','parmesano','sal','pimienta'],
+    ['200 g de lomo fino congelado','4 cdas. de aceite de oliva','1 cda. de vinagre rojo o balsámico','½ cda. de mostaza (puede ser de Dijón)','4 cdas. de jugo de limón','1½ cdas. de alcaparras escurridas','Láminas de parmesano','Sal','Pimienta al gusto'],
+    ['1. Mezclar los ingredientes de la vinagreta. Cortar el lomo en finas láminas y acomodarlas ordenadamente en cada plato. Sazonar con sal y pimienta al gusto (si la pimienta es recién molida, mejor).','2. Bañar con la vinagreta,salpicar con las alcaparras y decorar con las láminas de queso. Servir bien frío.','3. Si envuelve el lomo en papel film bien apretado y lo congela, podrá cortar el lomo en láminas delgadas. Para las láminas de parmesano, córtelas con el pelapapas.','4. Para acriollar el carpaccio, batir aceite de oliva con crema de ají amarillo, mostaza y jugo de limón, hasta formar una crema para verter sobre la carne y la salsa. En lugar de las alcaparras, usar ½ cebolla y ½ ají limo bien picados.'],
+    'Difícil',
+    'Alto',
+    'Un plato elegante para tu paladar'
+)
+const recipe15 = new Recipe(
+    '',
+    'Causa Rellena',
+    'Cuatro porciones',
+    'causa_rellena.jpg',
+    ['papa','aceite','aji','limon','sal','pimienta','atun','mayonesa','palta','huevo','cebolla','aceituna','perejil'],
+    ['1½ kg de papa amarilla o a elección','Aceite en cantidad necesaria','Ají verde molido','Limón al gusto','Sal y pimienta al gusto','1 lata de atún o 1½ tazas de pollo sancochado y deshilachado','1 taza de mayonesa','1 palta','1 huevo duro','½ taza de cebolla picada','Aceitunas sin pepas cortadas en tiras','Perejil picado']
+    ['1. Cocinar las papas en agua con sal y pelarlas en caliente. Pasarlas por el prensapapas y amasar con el aceite, el ají, el jugo de limón, la sal y la pimienta. Dividir en 3 porciones.','2. Con la primera forrar el fondo de un molde desarmable de 24 cm de diámetro, aceitado. Colocar encima el atún mezclado con ½ taza de mayonesa y las aceitunas.','3. Cubrir con otra porción de papa y acomodar el resto de la mayonesa, la palta en tajadas, el huevo en rodajas y la cebolla. Cubrir con el resto de papa.','4. Dejar reposar por ½ hora y decorar con huevos duros, perejil picado, lechuga o tomate.'],
+    'Media',
+    'Medio',
+    'La rica cultura peruana compactada en el relleno de este plato'
+)
+const recipe16 = new Recipe(
+    '',
+    'Ceviche de Champiñones',
+    'Cuatro porciones',
+    'ceviche_de_champiñones.jpg',
+    ['champiñones','limon','sal','pimienta','salsa_inglesa','ajo','aceite','aji'],
+    ['350 g de champiñones','¼ de taza de jugo de limón','Sal y pimienta al gusto','½ cda. de salsa inglesa','2 dientes de ajo picados','2 cdas. de aceite de oliva','Ají limo al gusto'],
+    ['1. Limpiar los champiñones con un paño o papel húmedo. Cortarlos en láminas de ½ cm de espesor.','2. Ponerlos en un recipiente, cubrir totalmente con el jugo de limón y condimentar con sal y pimienta, ajos picados, salsa inglesa, aceite y ají limo.','3. Dejar reposar 5 minutos y servir. Recuerde que los champiñones no deben remojarse en agua, porque son como una esponja y absorben todo.'],
+    'Facíl',
+    'Bajo',
+    'Sabores frescos y cítricos ¡Descubre la magia de los champiñones al limón!'
+)
+const recipe17 = new Recipe(
+    '', 
+    'Ceviche de pescado', 
+    'Cuatro porciones',
+    'ceviche_de_pescado.jpg',
+    ['pescado', 'limon', 'pisco', 'ajo', 'aji', 'apio', 'kion', 'cebolla', 'rocoto', 'culantro', 'hielo', 'cancha', 'choclo', 'lechuga', 'camotes'], 
+    ['1 kg de pescado del día', '1 taza de jugo de limón con ½ cdta. de pisco (opcional)', '1 diente de ajo picado', '1 ají fresco picado (limo o verde)', '¼ de taza de apio picado (opcional)', '¼ de cdta. de kion rallado (opcional)', '1 cebolla grande cortada a la pluma', '1 rocoto en rodajas', '1 cda. de culantro picado', '2 cubitos de hielo', '1 taza de cancha o choclo sancochado'],
+    ['1. Lavar el pescado y cortarlo en cubos. Sazonar con sal y pimienta. Cubrir con el jugo de limón.',
+    '2. Agregar el ajo, el ají, el apio, el kion y el hielo. Dejar reposar unos minutos y servir sobre hojas de lechuga y colocar encima la cebolla.',
+    '3. Servir con la cancha, el choclo y los camotes sancochados. Adornar con las rodajas de rocoto y espolvorear con el culantro picado.'],
+    'facil',
+    'bajo', 
+    'Frescor y sabor en cada bocado: ¡Disfruta de un clásico cebiche de pescado!'
+)
+
+const recipe18 = new Recipe(
+    '', 
+    'Chicharrones de pollo', 
+    'Seis porciones',
+    'chicharrones_de_pollo.jpg', 
+    ['carne_de_cerdo', 'sal', 'agua', 'hierbabuena', 'pechugas_de_pollo', 'azucar', 'sillao', 'aceite'], 
+    ['1 kg de carne de cerdo', 'Sal y agua', '1 ramita de hierbabuena', '3 pechugas de pollo', '3 cdtas. de sal', '1 cdta. de azúcar', '1 cda. de sillao', 'Aceite para freír'], 
+    ['1. Cortar la carne en trozos medianos, cubrirlos con agua y agregar la hierbabuena y sal al gusto. Hervir hasta que el agua se consuma y, con la grasa que suelta, se vaya friendo.',
+    '2. Si el recipiente no tuviera suficiente grasa al consumirse el agua, añadir 2 cdas. de manteca de cerdo o vegetal y esperar que la carne se dore.',
+    '3. Servir acompañado de salsa criolla y camote o de pan francés.',
+    '4. Cortar las pechugas de pollo en cubos de 3 cm. Incorporar la sal, el azúcar y el sillao. Mezclar bien y dejar macerar durante 30 minutos.',
+    '5. Freír en abundante aceite caliente y retirar sobre papel absorbente.',
+    '6. Servir con jugo de limón. Son agradables también como piqueo.'],
+    'facil',
+    'bajo',
+    'Crujientes y deliciosos: ¡Disfruta de los irresistibles chicharrones de pollo!'
+)
+
+const recipe19 = new Recipe(
+    '',
+    'Choros a la chalaca', 
+    'Cuatro porciones',
+    'choros_a_la_chalaca.jpg', 
+    ['choros', 'cebollas', 'rocoto', 'perejil', 'tomate', 'choclo'], 
+    ['2 docenas de choros', '2 cebollas picadas en cuadraditos', '2 cdas. de rocoto picado en cuadraditos', '2 cdas. de perejil picado', '1 tomate pelado y picado', '1 taza de choclo cocido'], 
+    ['1. Limpiar bien los choros, retirándoles las barbas, bajo el chorro de agua y con ayuda de un cuchillo, desechando los que estén abiertos.',
+    '2. Sancochar los choros en abundante agua, dar un hervor e ir retirando los que se abren, para que no se recocinen. Eliminar los que no se hayan abierto.',
+    '3. En un tazón, mezclar cebolla, rocoto, perejil, tomate, ají, jugo de los limones, sal, pimienta y aceite.',
+    '4. Dejar reposar por unos 5 minutos y colocar 1 cda. de esta mezcla sobre cada choro. Servir inmediatamente.',
+    '5. Se pueden servir tibios y rociados con unas gotas de aceite de oliva.'],
+    'facil', 
+    'bajo',
+    'Sabor fresco del mar con un toque picante: ¡Disfruta de los choros a la chalaca!'
+)
 // const recipe20 = new Recipe(
 //     '',
 //     '',
