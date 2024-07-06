@@ -342,27 +342,23 @@ const recipe19 = new Recipe(
     'choros_a_la_chalaca.jpg', 
     ['choros', 'cebollas', 'rocoto', 'perejil', 'tomate', 'choclo'], 
     ['2 docenas de choros', '2 cebollas picadas en cuadraditos', '2 cdas. de rocoto picado en cuadraditos', '2 cdas. de perejil picado', '1 tomate pelado y picado', '1 taza de choclo cocido'], 
-    ['1. Limpiar bien los choros, retirándoles las barbas, bajo el chorro de agua y con ayuda de un cuchillo, desechando los que estén abiertos.',
-    '2. Sancochar los choros en abundante agua, dar un hervor e ir retirando los que se abren, para que no se recocinen. Eliminar los que no se hayan abierto.',
-    '3. En un tazón, mezclar cebolla, rocoto, perejil, tomate, ají, jugo de los limones, sal, pimienta y aceite.',
-    '4. Dejar reposar por unos 5 minutos y colocar 1 cda. de esta mezcla sobre cada choro. Servir inmediatamente.',
-    '5. Se pueden servir tibios y rociados con unas gotas de aceite de oliva.'],
+    ['1. Limpiar bien los choros, retirándoles las barbas, bajo el chorro de agua y con ayuda de un cuchillo, desechando los que estén abiertos.','2. Sancochar los choros en abundante agua, dar un hervor e ir retirando los que se abren, para que no se recocinen. Eliminar los que no se hayan abierto.','3. En un tazón, mezclar cebolla, rocoto, perejil, tomate, ají, jugo de los limones, sal, pimienta y aceite.','4. Dejar reposar por unos 5 minutos y colocar 1 cda. de esta mezcla sobre cada choro. Servir inmediatamente.','5. Se pueden servir tibios y rociados con unas gotas de aceite de oliva.'],
     'facil', 
-    'bajo',
+    'Medio',
     'Sabor fresco del mar con un toque picante: ¡Disfruta de los choros a la chalaca!'
 )
-// const recipe20 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
+const recipe20 = new Recipe(
+    '',
+    'Coctel de Langostinos o Camarones', 
+    'Cuatro porciones', 
+    'coctel_de_langostinos_o_camarones.jpg', 
+    ['colas_de_langostinos', 'camarones', 'sal', 'pimienta', 'palta', 'jugo_de_limon', 'salsa_golf'],
+    ['½ kg de colas de langostinos o camarones', 'Sal y pimienta', '1 palta', 'Jugo de limón', '1 taza de salsa golf', '4-6 copas'], 
+    ['1. Pelar, limpiar y cocinar las colas de langostinos o camarones en agua hirviendo con sal y pimienta durante 3 minutos. Apenas cambien de color, colar, escurrir y enfriar.','2. Cortar la palta en tajadas del tamaño de un bocado y rociarlas con jugo de limón, para que no se oscurezcan.','3. Poner en cada copa 1 cda. de salsa golf. Acomodar las colas de langostinos y, entre ellas, las tajadas de palta. Adornar las copas con colas. Poner salsa golf en una salsera adicional.','4. Para limpiar las colas de los langostinos, retirar la cáscara y quitarles el tubo digestivo cortando ligeramente el lomo (o con ayuda de una pinza).'], 
+    'Medio', 
+    'Medio', 
+    'Elegancia en cada bocado: ¡Disfruta del clásico cóctel de langostinos o camarones!'
+)
 // const recipe21 = new Recipe(
 //     '',
 //     '',
