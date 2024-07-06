@@ -359,42 +359,56 @@ const recipe20 = new Recipe(
     'Medio', 
     'Elegancia en cada bocado: ¡Disfruta del clásico cóctel de langostinos o camarones!'
 )
-// const recipe21 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe22 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe23 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
+const recipe21 = new Recipe(
+    '', 
+    'Conchitas a la Parmesana', 
+    'Cuatro  porciones', 
+    'conchitas_a_la_parmesana.jpg', 
+    ['conchas', 'mantequilla', 'jugo_de_limon', 'queso_parmesano', 'sal', 'pimienta', 'salsa_huancaina'], 
+    ['2 docenas de conchas', '100 g de mantequilla', 'Jugo de limón', 'Queso parmesano', 'Sal y pimienta', 'Salsa huancaína (opcional)'], 
+    ['1. Limpiar las conchas. Salpimentarlas.',
+    '2. Cubrir con queso parmesano y ¼ de cdta. de mantequilla y gotas de jugo de limón.',
+    '3. Llevar al horno de 175°C o 350°F durante 8 a 10 minutos o hasta que el queso se derrita.',
+    '4. Si no tiene horno, puede usar una sartén que contenga 2 cm de agua. Colocar las conchitas, tapar la sartén y cocinar por 3 a 4 minutos.',
+    '5. Servir con rodajas de limón.',
+    '6. Si desea, poner en cada valva ½ cda. de salsa huancaína y seguir la receta.'], 
+    'facil', 
+    'medio', 
+    'Deliciosas y gratinadas: ¡Disfruta de las irresistibles conchitas a la parmesana!'
+)
+const recipe22 = new Recipe(
+'', 
+    'Corazones de Alcachofas Gratinados', 
+    'Seis porciones', 
+    'corazones_de_alcachofas_gratinados.jpg', 
+    ['corazones_de_alcachofa', 'choclos_tiernos', 'tocino', 'sal', 'harina', 'queso_parmesano'], 
+    ['6 corazones de alcachofa', '2 choclos tiernos', '2 lonjas de tocino picado y frito', 'Sal', '1 cdta. de harina', 'Queso parmesano rallado'], 
+    ['1. Cocinar los corazones de alcachofa en agua con sal y 1 cdta. de harina, para que no se oscurezcan.',
+    '2. Sancochar los choclos y desgranarlos.',
+    '3. Acomodar los corazones en una fuente para horno, aceitada, que pueda ir del horno a la mesa.',
+    '4. Preparar la salsa blanca. Agregar los granos de choclo cocidos y escurridos, y el tocino picado y frito. Condimentar al gusto.',
+    '5. Rellenar los corazones con la crema. Espolvorear el queso parmesano rallado y gratinar a horno caliente (200°C o 400°F) unos minutos antes de servir.'], 
+    'facil', 
+    'medio', 
+    'Cremosos y crujientes: ¡Disfruta de los irresistibles corazones de alcachofas gratinados!'
+)
+const recipe23 = new Recipe(
+    '', 
+    'Empanadas', 
+    'doce a catorce porciones', 
+    'empanadas.jpg', 
+    ['harina', 'leche', 'yema', 'sal', 'margarina', 'manteca', 'aceite', 'cebolla', 'carne_molida', 'pimienta', 'pimenton', 'oregano', 'huevos_duros', 'aceitunas', 'pasas'], 
+    ['Masa:', 
+    '1 kg de harina', '1½ tazas de leche tibia', '1 yema', '1 cdta. de sal', '125 g de margarina', '125 g de manteca', 'Relleno:', '½ taza de aceite', '1 kg de cebolla', '½ kg de carne molida', 'Sal, pimienta, pimentón y orégano', '3 huevos duros', '100 g de aceitunas', '½ taza de pasas'], 
+    ['1. Cernir la harina en un tazón. Hacer un hueco al centro y ubicar dentro la leche, la yema, la sal, la margarina blanda y la manteca derretida y tibia. Unir todos los ingredientes y trabajar bien hasta obtener una masa lisa. Dejar descansar tapada con un paño seco.',
+    '2. Para el relleno, calentar el aceite en una sartén grande. Agregar la cebolla picada y cocinar hasta que esté transparente. Añadir la carne molida y cocinar hasta que se dore. Condimentar con sal, pimienta, pimentón y orégano.',
+    '3. Dejar enfriar el relleno y agregar los huevos duros picados, las aceitunas y las pasas.',
+    '4. Extender la masa con un rodillo sobre una superficie enharinada. Cortar círculos del tamaño deseado y colocar una porción del relleno en el centro de cada círculo. Doblar la masa sobre el relleno y sellar los bordes presionando con un tenedor.',
+    '5. Colocar las empanadas en una bandeja para hornear engrasada y hornear a 180°C (350°F) durante 20-25 minutos o hasta que estén doradas.'], 
+    'medio', 
+    'medio', 
+    '¡Disfruta de las clásicas empanadas con un relleno delicioso y masa crujiente!'
+)
 // const recipe24 = new Recipe(
 //     '',
 //     '',
