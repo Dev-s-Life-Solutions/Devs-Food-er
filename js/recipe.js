@@ -409,18 +409,21 @@ const recipe23 = new Recipe(
     'medio', 
     '¡Disfruta de las clásicas empanadas con un relleno delicioso y masa crujiente!'
 )
-// const recipe24 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
+const recipe24 = new Recipe(
+    '', 
+    'Escabeche de Pollo', 
+    'cuatro porciones', 
+    'escabeche_de_pollo.jpg', 
+    ['cebolla', 'aji', 'vinagre', 'hierbabuena', 'pimienta_negra', 'pechugas_de_pollo', 'aceite', 'ajo', 'lechuga', 'huevo', 'aceitunas', 'choclo', 'camote'], 
+    ['1 kg de cebolla', '2 ajíes verdes enteros', '1½ tazas de vinagre', '2 ramitas de hierbabuena', '1 cda. de pimienta negra entera', '2 o 3 pechugas de pollo cocidas', '½ taza de aceite', '2 dientes de ajo picados', '2 cdas. de ají panca molido o pasta de ají', 'Ají verde molido al gusto', 'Hojas de lechuga', 'Huevos duros', 'Aceitunas', 'Rodajas de choclo', 'Camote sancochado'], 
+    ['1. Cortar las cebollas en rajas y los ajíes en tiras. Colocarlos en un recipiente, añadir el vinagre, la hierbabuena y la pimienta (envuelta en una gasa). Tapar y dejar descansar por lo menos durante 3 horas.',
+    '2. Sancochar el pollo con sal y algunas verduras. Dejar enfriar en su mismo caldo. Cortar el pollo en trozos medianos.',
+    '3. En una olla, calentar el aceite y freír los ajos y los dos tipos de ají molidos. Incorporar la cebolla con el vinagre y rectificar la sazón. Dar un hervor, agregar el pollo y dejar enfriar.',
+    '4. Acomodar en una fuente el pollo con las cebollas y la salsa. Decorar con los huevos duros, las aceitunas, las rodajas de choclo, la lechuga y los camotes sancochados.'], 
+    'medio', 
+    'medio', 
+    'Sabor y tradición en cada bocado: ¡Disfruta del clásico escabeche de pollo!'
+)
 // const recipe25 = new Recipe(
 //     '',
 //     '',
