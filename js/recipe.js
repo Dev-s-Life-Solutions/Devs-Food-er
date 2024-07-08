@@ -256,7 +256,7 @@ const recipe12 = new Recipe(
 )
 const recipe13 = new Recipe(
     '',
-    'Brochetas de pollo al kion y salsa agridulce',
+    'Brochetas de pollo agridulce',
     'Cuatro Porciones',
     'brocheta_pollo_kion_agridulce.jpg',
     ['pollo', 'sillao', 'ajo', 'cebolla', 'azucar', 'aceite', 'vino_blanco', 'kion', 'sal'],
@@ -353,7 +353,7 @@ const recipe20 = new Recipe(
     'Cuatro porciones', 
     'coctel_de_langostinos_o_camarones.jpg', 
     ['langostino', 'camarones', 'sal', 'pimienta', 'palta', 'jugo_de_limon', 'salsa_golf'],
-    ['½ kg de colas de langostinos o camarones', 'Sal y pimienta', '1 palta', 'Jugo de limón', '1 taza de salsa golf', '4-6 copas'], 
+    ['½ kg de colas de langostinos o camarones', 'Sal y pimienta', '1 palta', 'Jugo de limón', '1 taza de salsa golf'], 
     ['1. Pelar, limpiar y cocinar las colas de langostinos o camarones en agua hirviendo con sal y pimienta durante 3 minutos. Apenas cambien de color, colar, escurrir y enfriar.','2. Cortar la palta en tajadas del tamaño de un bocado y rociarlas con jugo de limón, para que no se oscurezcan.','3. Poner en cada copa 1 cda. de salsa golf. Acomodar las colas de langostinos y, entre ellas, las tajadas de palta. Adornar las copas con colas. Poner salsa golf en una salsera adicional.','4. Para limpiar las colas de los langostinos, retirar la cáscara y quitarles el tubo digestivo cortando ligeramente el lomo (o con ayuda de una pinza).'], 
     'Medio', 
     'Medio', 
@@ -364,7 +364,7 @@ const recipe21 = new Recipe(
     'Conchitas a la Parmesana', 
     'Cuatro  porciones', 
     'conchitas_a_la_parmesana.jpg', 
-    ['conchas', 'mantequilla', 'jugo_de_limon', 'queso_parmesano', 'sal', 'pimienta', 'salsa_huancaina'], 
+    ['conchas', 'mantequilla', 'jugo_de_limon', 'queso', 'sal', 'pimienta', 'salsa_huancaina'], 
     ['2 docenas de conchas', '100 g de mantequilla', 'Jugo de limón', 'Queso parmesano', 'Sal y pimienta', 'Salsa huancaína (opcional)'], 
     ['1. Limpiar las conchas. Salpimentarlas.',
     '2. Cubrir con queso parmesano y ¼ de cdta. de mantequilla y gotas de jugo de limón.',
@@ -378,7 +378,7 @@ const recipe21 = new Recipe(
 )
 const recipe22 = new Recipe(
 '', 
-    'Corazones de Alcachofas Gratinados', 
+    'Corazones de Alcachofas', 
     'Seis porciones', 
     'corazones_de_alcachofas_gratinados.jpg', 
     ['corazones_de_alcachofa', 'choclos_tiernos', 'tocino', 'sal', 'harina', 'queso_parmesano'], 
@@ -390,14 +390,14 @@ const recipe22 = new Recipe(
     '5. Rellenar los corazones con la crema. Espolvorear el queso parmesano rallado y gratinar a horno caliente (200°C o 400°F) unos minutos antes de servir.'], 
     'facil', 
     'medio', 
-    'Cremosos y crujientes: ¡Disfruta de los irresistibles corazones de alcachofas gratinados!'
+    'Cremosos y crujientes los irresistibles corazones de alcachofas gratinados'
 )
 const recipe23 = new Recipe(
     '', 
     'Empanadas', 
     'doce a catorce porciones', 
     'empanadas.jpg', 
-    ['harina', 'leche', 'yema', 'sal', 'margarina', 'manteca', 'aceite', 'cebolla', 'carne_molida', 'pimienta', 'pimenton', 'oregano', 'huevos_duros', 'aceitunas', 'pasas'], 
+    ['harina', 'leche', 'yema', 'sal', 'Margarina', 'manteca', 'aceite', 'cebolla', 'carne_molida', 'pimienta', 'pimenton', 'oregano', 'huevos_duros', 'aceitunas', 'pasas'], 
     ['Masa:', 
     '1 kg de harina', '1½ tazas de leche tibia', '1 yema', '1 cdta. de sal', '125 g de margarina', '125 g de manteca', 'Relleno:', '½ taza de aceite', '1 kg de cebolla', '½ kg de carne molida', 'Sal, pimienta, pimentón y orégano', '3 huevos duros', '100 g de aceitunas', '½ taza de pasas'], 
     ['1. Cernir la harina en un tazón. Hacer un hueco al centro y ubicar dentro la leche, la yema, la sal, la margarina blanda y la manteca derretida y tibia. Unir todos los ingredientes y trabajar bien hasta obtener una masa lisa. Dejar descansar tapada con un paño seco.',
