@@ -352,7 +352,7 @@ const recipe20 = new Recipe(
     'Coctel de Langostinos o Camarones', 
     'Cuatro porciones', 
     'coctel_de_langostinos_o_camarones.jpg', 
-    ['colas_de_langostinos', 'camarones', 'sal', 'pimienta', 'palta', 'jugo_de_limon', 'salsa_golf'],
+    ['langostino', 'camarones', 'sal', 'pimienta', 'palta', 'jugo_de_limon', 'salsa_golf'],
     ['½ kg de colas de langostinos o camarones', 'Sal y pimienta', '1 palta', 'Jugo de limón', '1 taza de salsa golf', '4-6 copas'], 
     ['1. Pelar, limpiar y cocinar las colas de langostinos o camarones en agua hirviendo con sal y pimienta durante 3 minutos. Apenas cambien de color, colar, escurrir y enfriar.','2. Cortar la palta en tajadas del tamaño de un bocado y rociarlas con jugo de limón, para que no se oscurezcan.','3. Poner en cada copa 1 cda. de salsa golf. Acomodar las colas de langostinos y, entre ellas, las tajadas de palta. Adornar las copas con colas. Poner salsa golf en una salsera adicional.','4. Para limpiar las colas de los langostinos, retirar la cáscara y quitarles el tubo digestivo cortando ligeramente el lomo (o con ayuda de una pinza).'], 
     'Medio', 
