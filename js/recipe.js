@@ -424,138 +424,180 @@ const recipe24 = new Recipe(
     'medio', 
     'Sabor y tradición en cada bocado: ¡Disfruta del clásico escabeche de pollo!'
 )
-// const recipe25 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe26 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe27 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe28 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe29 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe30 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe31 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe32 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe33 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe34 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
-// const recipe35 = new Recipe(
-//     '',
-//     '',
-//     '',
-//     '.jpg',
-//     [],
-//     [],
-//     [],
-//     '',
-//     '',
-//     ''
-// )
+const recipe25 = new Recipe(
+    '', 
+    'Croquetas de atún', 
+    'Cuatro porciones', 
+    'croquetas_de_atun.jpg', 
+    ['margarina', 'harina', 'leche_fresca', 'leche_evaporada', 'sal', 'pimienta', 'nuez_moscada', 'atun', 'perejil', 'jugo_de_limon', 'huevo', 'pan_rallado', 'aceite'], 
+    ['3 cdas. de margarina', '1/3 de taza de harina', '1 taza de leche fresca o evaporada terciada', 'Sal, pimienta y nuez moscada al gusto', '2 latas de atún', '2 cdas. de perejil picado', '2 cdas. de jugo de limón', '1 huevo', 'Pan rallado para empanizar', 'Aceite para freír'], 
+    ['1. Derretir la margarina. Incorporar la harina. Mezclar y agregar poco a poco la leche caliente, sin dejar de mover.',
+    '2. Sazonar con sal, pimienta y nuez moscada.',
+    '3. Dejar enfriar con un plástico adherido a la salsa, para evitar que se forme nata. Mezclar con los demás ingredientes.',
+    '4. Humedecerse las manos y formar las croquetas. Pasar por huevo batido y pan rallado.',
+    '5. Freír en abundante aceite durante 7 a 8 minutos. Retirar sobre papel absorbente.'],
+    'facil', 
+    'bajo', 
+    'Deliciosas croquetas de atún, perfectas para cualquier ocasión'
+)
+const recipe26 = new Recipe(
+    '', 
+    'Huevos a la rusa', 
+    'Seis porciones', 
+    'huevos_a_la_rusa.jpg', 
+    ['huevo', 'leche_evaporada', 'sal', 'pimienta', 'nuez_moscada', 'papas', 'zanahorias', 'arvejas', 'mayonesa', 'margarina', 'queso', 'alcachofas', 'salsa_golf', 'perejil', 'tomate'], 
+    ['6 huevos', '1¾ tazas de leche evaporada', 'Sal y pimienta al gusto', '1 pizca de nuez moscada', '2 tazas de papas sancochadas cortadas en cuadraditos', '1 taza de zanahorias sancochadas cortadas en cuadraditos', '½ taza de arvejas sancochadas', 'Mayonesa', '6 huevos duros', 'Margarina', 'Queso', 'Alcachofas partidas en trozos pequeños', 'Salsa golf', 'Ramitas de perejil', 'Cuñas de tomate'], 
+    ['1. Colocar los huevos en un tazón y mezclarlos bien. Agregar la leche, la sal, la pimienta, la nuez moscada, la margarina, el queso y las alcachofas partidas en trozos pequeños.',
+    '2. Volcar la mezcla en un molde de 30 cm x 20 cm enmantequillado. Hornear a temperatura moderada (175°C o 350°F) hasta que cuaje. Puede servirse solo o bañado con una salsa blanca ligera.',
+    '3. Mezclar las verduras sancochadas y frías con mayonesa bien condimentada. Repartir en 6 platos.',
+    '4. Acomodar 2 mitades de huevos duros sobre la ensalada rusa, colocando la parte del corte hacia abajo.',
+    '5. Bañar con salsa golf y decorar con ramitas de perejil y cuñas de tomate.'],
+    'facil', 
+    'bajo', 
+    'Un clásico plato fresco y colorido: ¡Huevos a la rusa!'
+)
+const recipe27 = new Recipe(
+    '', 
+    'Ocopa de camarones', 
+    'Cuatro porciones', 
+    'ocopa_de_camarones.jpeg', 
+    ['pasta_de_aji_mirasol', 'aceite', 'cebolla', 'huacatay', 'camarones', 'nueces', 'queso_fresco', 'leche_evaporada', 'sal', 'huevo', 'papa', 'aceituna', 'lechuga'], 
+    ['2 cdas. de pasta de ají mirasol', 'Aceite en cantidad necesaria', '1 cebolla grande', '1 rama de huacatay (las hojas)', '10 colas de camarones cocidas', '8 nueces', '150 g de queso fresco', '¼ de taza de leche evaporada', 'Sal al gusto', '3 huevos duros', '6 papas sancochadas y peladas (amarilla, huayro, tumbay)', '6 aceitunas de botija', 'Lechuga para acompañar'], 
+    ['1. Calentar aceite y freír la cebolla cortada en trozos gruesos hasta que dore. Retirar del fuego y licuar con la pasta de ají, las hojas de huacatay, los camarones, las nueces, el queso fresco, la leche y la sal, hasta que quede una salsa cremosa.',
+    '2. Colocar las papas en una fuente con huevos duros partidos por la mitad y cubrir con la salsa.',
+    '3. Si desea, decorar con camarones, aceitunas y lechuga.'],
+    'facil', 
+    'medio', 
+    'Disfruta de la deliciosa Ocopa de camarones, una explosión de sabores peruanos.'
+)
+const recipe28 = new Recipe(
+    '', 
+    'Omelette', 
+    'Cuatro a seis porciones', 
+    'omelette.jpg', 
+    ['huevo', 'agua', 'sal', 'pimienta', 'mantequilla', 'aceite', 'jamon', 'queso_mantecoso', 'pan_rallado', 'hierbas', 'perejil', 'pollo_cocido', 'grano_de_choclo', 'arveja'], 
+    ['5 huevos', '2 cdas. de agua fría', 'Sal y pimienta al gusto', '1 cda. de mantequilla o aceite', 'Jamón picado o queso mantecoso (opcional)', 'Pan rallado (para la versión al horno)', 'Hierbas al gusto picadas (como perejil, finas hierbas)', 'Pollo cocido (opcional)', 'Granos de choclo sancochados (opcional)', 'Arvejas (opcional)'], 
+    ['1. Colocar los huevos en un tazón con el agua fría y salpimentar al gusto. Batirlos ligeramente y reservar.',
+    '2. Poner la mantequilla en una sartén. Llevar a fuego moderado hasta que se derrita y volcar la preparación anterior. Distribuir en forma pareja con una espátula hasta que cuaje.',
+    '3. Cuando los bordes comienzan a despegarse, agregar, si desea, jamón picado o queso mantecoso. Doblar el omelette hacia un lado. Retirar y servir de inmediato en un plato.',
+    '4. Para la versión al horno, enmantequillar moldes bajos y espolvorear pan rallado en cada uno. Llevar a un horno precalentado a 175°C durante unos 10 minutos o hasta que se dore.',
+    '5. Los omelettes también quedan muy sabrosos si agregamos hierbas al gusto picadas al batido de huevos o si cambiamos el relleno por otros ingredientes como atún, pollo cocido, granos de choclo sancochados, arvejas, etc. El secreto es que queden jugosos por dentro.'],
+    'facil', 
+    'bajo', 
+    'Disfruta de un omelette jugoso y lleno de sabor.'
+)
+const recipe29 = new Recipe(
+    '', 
+    'Papas a la huancaína', 
+    'Cuatro a seis porciones', 
+    'papas_a_la_huancaina.jpg', 
+    ['aji', 'huevo', 'queso_fresco', 'requeson', 'leche', 'limon', 'aceite', 'papa', 'perejil', 'aji_verde_picado', 'azucar', 'aceitunas', 'sal', 'pimienta', 'huevo'], 
+    ['4 ajíes verdes', '2 yemas duras', '200 g de queso fresco o requesón', '½ taza de leche', 'Jugo de 1 limón', '¼ de taza de aceite', '4-6 papas cocidas', 'Perejil picado', 'Ají verde picado al gusto', '1 cdta. de azúcar', 'Aceitunas de botija (para decorar)', 'Sal y pimienta al gusto', '2 claras de huevo duros muy picadas', 'Lechuga para decorar'], 
+    ['1. Quitar las pepas a los ajíes y darles 3 hervores con agua y 1 cdta. de azúcar. Escurrir y licuar con las yemas, queso, leche, jugo de limón y aceite hasta obtener una salsa de mediana consistencia.',
+    '2. Acomodar en una fuente las papas peladas y en rodajas. Cubrir con la salsa.',
+    '3. Servir con lechuga y decorar con aceitunas y las claras de huevo duro ralladas.'],
+    'facil', 
+    'bajo', 
+    'Disfruta de las deliciosas Papas a la huancaína, un plato típico peruano.'
+)
+const recipe30 = new Recipe(
+    '', 
+    'Paté de langostinos', 
+    'Seis a ocho porciones', 
+    'pate_de_langostinos.jpg', 
+    ['langostino', 'hoja_de_laurel', 'ajo', 'mantequilla', 'mayonesa', 'salsa_picante', 'sal', 'pulpa_de_cangrejo', 'alcachofa', 'brocoli', 'aceituna', 'galleta', 'tostada'], 
+    ['½ kg de langostinos', '1 hoja de laurel', '1 diente de ajo', '6 cdas. de mantequilla derretida', '1/3 de taza de mayonesa', '½ cdta. de salsa picante', 'Sal al gusto', 'Pulpa de cangrejo (como variación)', 'Alcachofas (como variación)', 'Brócoli (como variación)', 'Aceitunas (como variación)', 'Galletas o tostadas (para acompañar)'], 
+    ['1. Sancochar tres minutos en agua hirviendo los langostinos limpios con la hoja de laurel y la sal. Colar y retirar la hoja de laurel.',
+    '2. Licuar o procesar los langostinos con el diente de ajo y la mantequilla derretida.',
+    '3. Agregar la mantequilla derretida fría, la mayonesa y la salsa picante. Mezclar muy bien.',
+    '4. Volcar la mezcla en moldes forrados con plástico o papel film. Llevar a la refrigeradora y desmoldar cuando cuaje.',
+    '5. Acompañar con galletas o tostadas.',
+    'Variación: Pueden reemplazarse los langostinos con pulpa de cangrejo, alcachofas, brócoli, aceitunas, etcétera.'],
+    'facil', 
+    'bajo', 
+    'Disfruta de un delicioso paté de langostinos, perfecto para entradas o acompañamientos.'
+)
+const recipe31 = new Recipe(
+    '', 
+    'Tiradito', 
+    'Cuatro a seis porciones', 
+    'tiradito.jpg', 
+    ['pescado', 'sal', 'pimienta', 'limon', 'kion', 'culantro', 'huevo', 'harina_preparada', 'cebolla', 'leche', 'apio', 'pisco', 'rocoto', 'aji_limo', 'lechuga', 'aceite', 'choclo', 'camote', 'hielo'], 
+    ['½ kg de pescado del día', 'Sal y pimienta al gusto', '20 limones', '1 rodaja de kion', '4 hojas de culantro', '4 huevos', '3 cdas. de harina preparada', '1 cebolla picada y frita en aceite', '2 cdas. de leche', '1 rama de apio', '½ cdta. de pisco', '1 trozo de rocoto', '1 ají limo sin pepas cortado en cubitos', '1 taza de lechuga picada a la juliana', 'Aceite en cantidad necesaria', '2 choclos desgranados y cocidos', '6 rodajas de camote cocido', 'Ramas de culantro', '1 cubito de hielo'], 
+    ['1. Cortar el pescado en láminas de 1 cm de espesor y luego en tiras de 6 cm x 2 cm. Aplanarlas con la hoja de un cuchillo grande. Colocarlas sobre un plato y mantener refrigeradas.',
+    '2. Exprimir los limones y mezclar el jugo con la rodaja de kion, el culantro, el apio, el pisco y el trozo de rocoto. Dejar marinar de 10 a 15 minutos.',
+    '3. Para servir, salpimentar las tiras de pescado y rociar con la marinada de limón, previamente colada. Opcionalmente, agregar el ají limo picado.',
+    '4. Adornar con choclo, camote y hojas de culantro.',
+    'Variantes: Puedes explorar diferentes variaciones como con pasta de rocoto, crema de aceite de oliva, mezcla de mariscos, pimientos o jugos cítricos, según tu preferencia.'],
+    'facil', 
+    'bajo', 
+    'Disfruta de un delicioso Tiradito, un plato fresco y lleno de sabor peruano.'
+)
+const recipe32 = new Recipe(
+    '',
+    'Ensalada César',
+    'Cuatro a seis porciones',
+    'ensalada_cesar.jpg',
+    ['lechuga', 'espinacas', 'aceite_de_oliva', 'queso_parmesano_rallado', 'limon', 'sal', 'pimienta', 'salsa_inglesa', 'crutones_al_ajo', 'anchoas', 'tocino', 'huevo'],
+    ['2 lechugas americanas o 1 lechuga y ¼ de kg de espinacas', '1/3 de taza de aceite de oliva', '½ taza de queso parmesano rallado', '2 cdas. de jugo de limón', 'Sal y pimienta al gusto', '½ cdta. de salsa inglesa', '1½ tazas de crutones al ajo', '1 lata chica de filetes de anchoa o ¼ de kg de tocino picado', '1 huevo cocido en agua por 2 minutos'],
+    ['1. Lavar las hojas de lechuga y espinacas. Escurrirlas, secarlas bien y cortarlas.',
+    '2. Añadir el aceite de oliva, el queso parmesano rallado, el jugo de limón, la sal, la pimienta, la salsa inglesa y las anchoas (o el tocino frito y crujiente si se prefiere).',
+    '3. Mezclar bien hasta que todos los ingredientes estén bien impregnados.',
+    '4. Adornar con los crutones al ajo.',
+    '5. Servir inmediatamente para disfrutarla fresca.'],
+    'facil',
+    'bajo',
+    'Deliciosa y clásica ensalada César, perfecta como entrada o acompañamiento.'
+)
+const recipe33 = new Recipe(
+    '',
+    'Ensalada de Coliflor o Brócoli',
+    'Seis a ocho porciones',
+    'ensalada_coliflor_brocoli.jpg',
+    ['coliflor', 'brocoli', 'aceite', 'vinagre', 'perejil_picado', 'huevos_duros', 'vinagreta_basica', 'crutones_de_pan', 'ajo_molido', 'mostaza', 'azucar'],
+    ['1 coliflor o brócoli', '½ taza de aceite', '¼ de taza de vinagre', '1 cda. de perejil picado', '50 g de tocino frito y picado', '3 huevos duros', 'Vinagreta básica (ver p. 19)', '1 taza de crutones de pan', '1 diente de ajo molido', '2 huevos duros picados', 'Condimentos al gusto'],
+    ['1. Hervir la coliflor o el brócoli en agua con sal, cuidando que no se recuezan. Cortar en gajos y colocar en una fuente.',
+    '2. Mezclar en un bol el aceite, el vinagre, el perejil picado, el ajo y los huevos duros picados. Condimentar bien.',
+    '3. Cubrir la coliflor o el brócoli con esta salsa.',
+    '4. Opcionalmente, se puede agregar 1 cdita. de mostaza y ½ cdita. de azúcar al condimento.',
+    '5. Servir la ensalada adornada con tocino frito, crutones de pan y más huevos duros picados, según prefieras.'],
+    'facil',
+    'bajo',
+    'Deliciosa ensalada de coliflor o brócoli, ideal como acompañamiento o plato principal.'
+)
+const recipe34 = new Recipe(
+    '',
+    'Ensalada de Fideos',
+    'Cuatro a seis porciones',
+    'ensalada_fideos_codito_choclo_esparragos.jpeg',
+    ['fideos', 'esparragos', 'choclo', 'perejil_picado', 'aceite', 'vinagre', 'mostaza', 'huevos_duros', 'pimiento', 'tomate'],
+    ['2 tazas de fideos codo chico', '1 taza de espárragos sancochados', '1 taza de choclo sancochado', '1 cda. de perejil picado', 'Sal y pimienta al gusto', '6 cdas. de aceite', '2 cdas. de vinagre', '1 cda. de mostaza'],
+    ['1. Mezclar los fideos codo chico sancochados y fríos con los espárragos, el choclo y el perejil picado.',
+    '2. Preparar la vinagreta mezclando el aceite, la mostaza, el vinagre, la sal y la pimienta.',
+    '3. Unir suavemente todos los ingredientes con la vinagreta preparada.',
+    '4. Acomodar la ensalada en una fuente para llevar a la mesa.',
+    '5. Decorar con huevos duros picados, tiras de pimiento y gajos de tomate.',
+    '6. Esta ensalada también puede prepararse sustituyendo los fideos por 2 tazas de arroz cocido, si se prefiere.'],
+    'facil',
+    'bajo',
+    'Ensalada refrescante y colorida de fideos codito con choclo y espárragos, ideal para acompañar tus comidas.'
+)
+const recipe35 = new Recipe(
+    '',
+    'Ensalada de Papas',
+    'Cuatro a seis porciones',
+    'ensalada_de_papas.jpg',
+    ['papa', 'cebolla', 'ajo', 'huevo_duro', 'perejil', 'aceite', 'vinagre', 'sal', 'pimienta', 'vainitas'],
+    ['1 kg de papas en cuadraditos', '2 cebollas picaditas', '3 dientes de ajo picados', '1 huevo duro picado', '2 cdas. de perejil picado', '½ taza de aceite', '¼ de taza de vinagre', 'Sal y pimienta al gusto'],
+    ['1. Cocinar las papas en agua con sal hasta que estén tiernas. Escurrir y reservar.',
+    '2. Mientras aún están calientes, mezclar las papas con la cebolla picada, los ajos picados, el huevo duro picado y el perejil picado.',
+    '3. Agregar el aceite y el vinagre. Condimentar con sal y pimienta al gusto.',
+    '4. Si se desea, añadir las vainitas cortadas al sesgo y previamente sancochadas en agua con sal. Condimentar también cuando estén calientes.',
+    '5. Decorar con ramitas de perejil antes de servir.'],
+    'facil',
+    'bajo',
+    'Deliciosa ensalada de papas con cebolla, ajo y huevo duro, aliñada con aceite y vinagre, ideal como acompañamiento.'
+)
 // const recipe36 = new Recipe(
 //     '',
 //     '',
