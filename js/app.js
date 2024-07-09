@@ -45,7 +45,7 @@ AppState.prototype.instantiateIngredients = function () {
     ];
 }
 AppState.prototype.instantiateRecipes = function () {
-    this.allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13];
+    this.allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13,recipe14,recipe15,recipe16,recipe17,recipe18,recipe19,recipe20,recipe21,recipe22,recipe23,recipe24,recipe25,recipe26,recipe27,recipe28,recipe29,recipe30,recipe31,recipe32,recipe33,recipe34,recipe35];
 }
 
 const app = new AppState();
@@ -66,7 +66,7 @@ function getSelectedIngredients() {
 
 function filterRecipesByIngredients(selectedIngredients) {
     return app.allRecipes.filter(recipe =>
-        selectedIngredients.every(ingredient => recipe.ingredients.includes(ingredient))
+        selectedIngredients.some(ingredient => recipe.ingredients.includes(ingredient))
     );
 }
 
